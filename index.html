@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24dc679615.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="astro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
+    <title>Astro</title>
+    <link rel="shortcut icon" href="assets/astronegro.ico" type="image/x-icon">
+    
+</head>
+<body id="index">  
+        <header>
+            <a href="#first_section" >
+                <img class="logo" src="assets/astronegro.png"> 
+            </a>
+        
+            <nav class="navegador">
+                <ul id="ul_section_nav">
+                    <li class="li_sections_nav">
+                        <a class="link_section_nav" href="#second_section">Mas que Estrellas</a>
+                    </li>
+                    <li class="li_sections_nav">
+                        <a class="link_section_nav" href="#third_section">Observacion</a>
+                    </li>
+                    <li class="li_sections_nav">
+                        <a class="link_section_nav" href="#fourth_section">Historias del universo</a>
+                    </li>
+                    <li class="li_sections_nav">
+                        <a class="link_section_nav" href="#fifth_section">Galeria</a>
+                    </li>
+                    <li class="li_sections_nav">
+                        <a class="link_section_nav" href="#contacto">contacto</a>
+                    </li>
+                </ul>       
+            </nav>
+        </header>
+        <main>
+     <!-- aqui tenemos la seccion que recibe al usuario con un video de fondo -->
+            <section id="first_section">
+               
+                <video  id="video_first_section" muted autoplay loop preload="auto">
+                    <source src="assets/nebula.mp4" type="video/mp4">
+                </video>
+                <div class="box_p_first_section">
+                    <h1>Astro</h1>
+                    <h4>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                    </h4>
+                </div>
+            </section>
+     <!-- pequeña explicacion de que puede encontrar en cada pagina del sitio -->
+            <section id="second_section">
+                <div class="title_p_second_section" >
+                    <a href="secciones/masqueestrellas.html" target="_blank">
+                        <h2>Mas que estrellas</h2>
+                    </a>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                    </h3>
+                </div>
+                <img class="img_second_section" src="assets/nebulosa_orion.jpg" alt="nebulosa de orion">               
+            </section>
+
+            <section id="third_section">
+                <img class="img_third_section" src="assets/milkyway.jpg" alt="hombre con la via lactea de fondo">
+                <img class="img_third_section_2" src="assets/brujula_blanca.png" alt="una brujula">
+                <div class="title_p_third_section">
+                    <a href="secciones/comoobservarelcielo.html" target="_blank">
+                        <h2>Observacion</h2>
+                    </a>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                    </h3>
+                </div>
+            </section>
+
+            <section id="fourth_section">
+                <div class="title_p_fourth_section">
+                    <a href="secciones/historiasdeluniverso.html" target="blank">
+                        <h2>historias del universo</h2>
+                    </a> 
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Lorem ipsum dolor sit amet.  
+                    </h3>
+                </div>
+                <img class="img_fourth_section" src="assets/constelaciones cielo.jpg" alt="cielo estrellado">
+                <img class="img_fourth_section_2" src="assets/andromeda_blanca.png" alt="dibujo de andromeda">                 
+            </section>    
+
+            <section  id="fifth_section">
+                <div class="title_fifth_section">
+                    <a href="secciones/galeria.html" target="_blank">
+                        <h2>Galeria</h2>
+                    </a>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </h3>
+                </div>
+                <!-- <div class="box_gallery"> -->
+                    <div class="box_img_fifth_section">
+                        <p class="p_img_fifth_section" >
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+                        </p>
+                        <img class="img_fifth_section" src="assets/spiral_galaxy.jpg" alt="galaxia en espiral">                       
+                    </div>
+                    <div class="box_img_fifth_section">    
+                        <img class="img_fifth_section"src="assets/head_horse.jpg" alt="nebulosa de orion, cabeza de caballo">
+                        <p class="p_img_fifth_section" >
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="box_img_fifth_section">   
+                        <p class="p_img_fifth_section" >
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p> 
+                        <img class="img_fifth_section" src="assets/nebulosa.jpg" alt="nebulosa">                        
+                    </div>    
+                    <div class="box_img_fifth_section">    
+                        <img class="img_fifth_section" src="assets/eclipse.jpg" alt="eclipse de luna">
+                        <p class="p_img_fifth_section" >
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                    </div>
+                <!-- </div>         -->
+            </section> 
+        </main>
+
+        <footer id="contacto">  
+        
+            <div class="title_p_contact">
+                <h2 id="title_contact">contacto </h2>
+                <h3 class="h3_contact">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </h3>
+                <ul id="ul_social_medias">   
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-3x fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-3x fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-3x fa-twitter-square"></i></a></li>   
+                </ul>
+            </div>
+            <!-- formulario para hacer participe al usuario -->
+            <form action="" method="post">
+                <label for="name">
+                    <input type="text" id="name" placeholder="Nombre" required>
+                </label>                
+                    <label for="email">
+                    <input type="email" id="email" placeholder="Email" required>
+                </label>                
+                    <label for="asunto">
+                    <input type="text" id="asunto" placeholder="Asunto" required>
+                </label>                
+                    <label for="cuentanos">
+                    <textarea id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                </label>                
+                <button id="submite" type="submit" name="enviar" >Enviar</button>   
+            </form>
+        
+        </footer>
+</body>
+
+</html>
+

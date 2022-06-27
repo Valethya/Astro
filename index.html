@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
     <title>Astro</title>
     <link rel="shortcut icon" href="assets/astronegro.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="recursos/animate.css">
+    <script src="recursos/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body id="index">  
         <header>
@@ -48,8 +52,8 @@
                     <source src="assets/nebula.mp4" type="video/mp4">
                 </video>
                 <div class="box_p_first_section">
-                    <h1>Astro</h1>
-                    <h4>
+                    <h1 class="wow animate__fadeInRight" data-wow-duration="1s" >Astro</h1>
+                    <h4 class="wow animate__fadeInRight" data-wow-duration="1.5s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
                     </h4>
@@ -57,14 +61,15 @@
             </section>
      <!-- pequeña explicacion de que puede encontrar en cada pagina del sitio -->
             <section id="second_section">
-                <div class="title_p_second_section" >
-                    <a href="secciones/masqueestrellas.html" target="_blank">
-                        <h2>Mas que estrellas</h2>
-                    </a>
-                    <h3>
+                <div class="title_p_second_section box_title_p">
+                    <h2 class="wow animate__fadeInDown" data-wow-duration="1s">Mas que estrellas</h2>
+                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                         Aenean commodo ligula eget dolor. Aenean massa.
                     </h3>
+                    <a href="secciones/masqueestrellas.html" target="_blank">
+                     <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
+                    </a>
                 </div>
                 <img class="img_second_section" src="assets/nebulosa_orion.jpg" alt="nebulosa de orion">               
             </section>
@@ -72,62 +77,65 @@
             <section id="third_section">
                 <img class="img_third_section" src="assets/milkyway.jpg" alt="hombre con la via lactea de fondo">
                 <img class="img_third_section_2" src="assets/brujula_blanca.png" alt="una brujula">
-                <div class="title_p_third_section">
-                    <a href="secciones/comoobservarelcielo.html" target="_blank">
-                        <h2>Observacion</h2>
-                    </a>
-                    <h3>
+                <div class="title_p_third_section box_title_p">
+                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">Observacion</h2>
+                    <h3 class="wow animate__fadeInRight" data-wow-duration="1s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
                     </h3>
+                    <a href="secciones/comoobservarelcielo.html" target="_blank">
+                        <div class="wow animate__fadeInRight" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
+                    </a>
                 </div>
             </section>
 
             <section id="fourth_section">
-                <div class="title_p_fourth_section">
-                    <a href="secciones/historiasdeluniverso.html" target="blank">
-                        <h2>historias del universo</h2>
-                    </a> 
-                    <h3>
+                <div class="title_p_fourth_section box_title_p">
+                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">historias del universo</h2>
+                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Lorem ipsum dolor sit amet.  
                     </h3>
+                    <a href="secciones/historiasdeluniverso.html" target="blank">
+                        <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
+                    </a>    
                 </div>
                 <img class="img_fourth_section" src="assets/constelaciones cielo.jpg" alt="cielo estrellado">
                 <img class="img_fourth_section_2" src="assets/andromeda_blanca.png" alt="dibujo de andromeda">                 
             </section>    
 
             <section  id="fifth_section">
-                <div class="title_fifth_section">
-                    <a href="secciones/galeria.html" target="_blank">
-                        <h2>Galeria</h2>
-                    </a>
-                    <h3>
+                <div class="title_fifth_section box_title_p">
+                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">Galeria</h2>
+                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </h3>
+                    <a href="secciones/galeria.html" target="_blank">
+                        <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
+                    </a>
                 </div>
                 <!-- <div class="box_gallery"> -->
                     <div class="box_img_fifth_section">
-                        <p class="p_img_fifth_section" >
+                        <p class="p_img_fifth_section wow animate__fadeInDown" data-wow-duration="1s">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
                         </p>
-                        <img class="img_fifth_section" src="assets/spiral_galaxy.jpg" alt="galaxia en espiral">                       
+                        <img class="img_fifth_section wow animate__fadeInUp" data-wow-duration="1s" src="assets/spiral_galaxy.jpg" alt="galaxia en espiral">                       
                     </div>
                     <div class="box_img_fifth_section">    
-                        <img class="img_fifth_section"src="assets/head_horse.jpg" alt="nebulosa de orion, cabeza de caballo">
-                        <p class="p_img_fifth_section" >
+                        <img class="img_fifth_section wow animate__fadeInDown" data-wow-duration="1.5s" src="assets/head_horse.jpg" alt="nebulosa de orion, cabeza de caballo">
+                        <p class="p_img_fifth_section wow animate__fadeInUp" data-wow-duration="1.5s">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         </p>
                     </div>
                     <div class="box_img_fifth_section">   
-                        <p class="p_img_fifth_section" >
+                        <p class="p_img_fifth_section wow animate__fadeInDown" data-wow-duration="2s">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         </p> 
-                        <img class="img_fifth_section" src="assets/nebulosa.jpg" alt="nebulosa">                        
+                        <img class="img_fifth_section wow animate__fadeInUp" data-wow-duration="2s" src="assets/nebulosa.jpg" alt="nebulosa">                        
                     </div>    
                     <div class="box_img_fifth_section">    
-                        <img class="img_fifth_section" src="assets/eclipse.jpg" alt="eclipse de luna">
-                        <p class="p_img_fifth_section" >
+                        <img class="img_fifth_section wow animate__fadeInDown" data-wow-duration="2.5s" src="assets/eclipse.jpg" alt="eclipse de luna">
+                        <p class="p_img_fifth_section wow animate__fadeInUp" data-wow-duration="2.5s">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         </p>
                     </div>
@@ -138,11 +146,11 @@
         <footer id="contacto">  
         
             <div class="title_p_contact">
-                <h2 id="title_contact">contacto </h2>
-                <h3 class="h3_contact">
+                <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
+                <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </h3>
-                <ul id="ul_social_medias">   
+                <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
                     <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-3x fa-facebook-square"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-3x fa-instagram"></i></a></li>
                     <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-3x fa-twitter-square"></i></a></li>   
@@ -151,18 +159,18 @@
             <!-- formulario para hacer participe al usuario -->
             <form action="" method="post">
                 <label for="name">
-                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
                 </label>                
                     <label for="email">
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
                 </label>                
                     <label for="asunto">
-                    <input type="text" id="asunto" placeholder="Asunto" required>
+                    <input class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
                 </label>                
                     <label for="cuentanos">
-                    <textarea id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                    <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
                 </label>                
-                <button id="submite" type="submit" name="enviar" >Enviar</button>   
+                <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
             </form>
         
         </footer>

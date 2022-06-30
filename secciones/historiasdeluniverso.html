@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/24dc679615.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../normalize.css">
-	<link rel="stylesheet" type="text/css" href="../astro.css">
+	
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
     <title>Historias del universo</title>   
     <link rel="shortcut icon" href="../assets/astronegro.ico" type="image/x-icon">
     <link rel="stylesheet" href="/recursos/animate.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../astro.css">
     <script src="/recursos/wow.js"></script>
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
     new WOW().init();
     </script>
@@ -21,33 +25,40 @@
 <body>
 
     <header>
-        <a href="../" >
-            <img class="logo" src="../assets/astronegro.png"width="100px"> 
-        </a>
-    
-        <nav class="navegador">
-            <ul id="ul_section_nav">
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/masqueestrellas.html">Mas que Estrellas</a>
+        <!-- probando navbar -->
+        <nav class="navbar shadow-lg navbar-expand-md navbar-dark nav-black fixed-top">
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class=" col-1 navbar-brand float-right" href="../index.html"><img src="../assets/astronegro.png"> </a>
+          
+            <div class="navbar-collapse collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link"  href="../secciones/masqueestrellas.html">Mas que Estrellas<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/comoobservarelcielo.html">Observacion</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../secciones/comoobservarelcielo.html">Observacion</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/historiasdeluniverso.html">Historias del universo</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../secciones/historiasdeluniverso.html">Historias del universo</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/galeria.html">Galeria</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../secciones/galeria.html">Galeria</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="#contacto">contacto</a>
-                </li>
-            </ul>       
-        </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- fin probando navbar -->
     </header>
+
     <main id="historias_universo">
-        <div class="introduction">
-            <h1>Historias del universo</h1>
+        <div class="jumbotron jumbotron-fluid bg-darks text-white">
+            <div class="container">
+                <h1>Historias del universo</h1>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
@@ -63,168 +74,195 @@
                     consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
                     viverra quis, feugiat a,
                 </p>
+            </Div>
         </div>     
 <!-- tarjetas para las diferentes historias -->
-        <section class="section_article">
-            <div class="box_article">           
-                <article>
-                    <h2>los dioses en el cielo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>              
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>4</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>  
-                
+<section class="container-fluid d-flex flex-row text-white flex-wrap">
+            <div class="col-12 bg-darks mb-3">  
+                <div class="dark">       
+                    <article class="card-body">
+                        <h2 class="card-title">los dioses en el cielo</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>4</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>  
+                    </article>              
+                </div>  
             </div>
 
-            <div class="box_article">           
-                <article>
-                    <h2>la constelacion de orion</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>              
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>8</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
+            <div class="col-12  col-sm-6 col-lg-6 bg-darks mb-3">  
+                <div class="dark">          
+                    <article class="card-body">
+                        <h2 class="card-title">La constelacion de Andromeda</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                            
+                        </p>             
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>4</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
 
-            <div class="box_article">           
-                <article>
-                    <h2>La constelacion de Andromeda</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>             
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>4</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
+            <div class="col-12  col-sm-6 col-lg-3 bg-darks mb-3">   
+                <div class="dark">      
+                    <article class="card-body">
+                        <h2 class="card-title">La osa mayor</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>            
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>5</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul> 
+                    </article>
+                </div>      
             </div>
 
-            <div class="box_article">           
-                <article>
-                    <h2>La osa mayor</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>            
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>       
+            <div class="col-12  col-sm-6 col-lg-3  bg-darks mb-3">
+                <div class="dark">             
+                    <article class="card-body">
+                        <h2 class="card-title">La osa menor</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>14</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul> 
+                    </article>            
+                </div>         
+            </div>
+            <div class="col-12  col-sm-6 col-lg-6 bg-darks mb-3">  
+                <div class="dark">        
+                    <article class="card-body">
+                        <h2 class="card-title">la constelacion de orion</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>8</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>     
+                </div> 
             </div>
 
-            <div class="box_article">             
-                <article>
-                    <h2>La osa menor</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>          
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>14</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>       
+            <div class="col-12  col-sm-6 col-lg-3 bg-darks mb-3"> 
+                <div class="dark">             
+                    <article class="card-body">
+                        <h2 class="card-title">Sagitario</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>            
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>9</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>
+                </div>    
             </div>
 
-            <div class="box_article">            
-                <article>
-                    <h2>Sagitario</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>            
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>9</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
+            <div class="col-12  col-sm-6 col-lg-3 bg-darks mb-3">
+                <div class="dark">           
+                    <article class="card-body">
+                        <h2 class="card-title">Escorpio</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>           
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>3</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>
+                </div> 
             </div>
 
-            <div class="box_article">          
-                <article>
-                    <h2>Escorpio</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>           
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>3</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
+            <div class="col-12  col-sm-6 col-lg-4 bg-darks mb-3"> 
+                <div class="dark">           
+                    <article class="card-body">
+                        <h2 class="card-title">La cruz del Sur</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                            Lorem ipsum dolor sit amet. 
+                        </p>            
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>5</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
 
-            <div class="box_article">          
-                <article>
-                    <h2>La cruz del Sur</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>            
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
-            </div>
-
-            <div class="box_article">            
-                <article>
-                    <h2>Casiopea</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
-                    </p>
-                </article>          
-                <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>2</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                </ul>
+            <div class="col-12  col-sm-6 col-lg-3 bg-darks mb-3">   
+                <div class="dark">         
+                    <article class="card-body">
+                        <h2 class="card-title">Casiopea</h2>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa.
+                        </p>          
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa-solid fa-heart"></i>2</li>
+                            <li class="list-inline-item"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                        </ul>
+                    </article>
+                </div> 
             </div>
         </section>
     </main>
 
-    <footer id="contacto">  
-        
-        <div class="title_p_contact">
-            <h2 id="title_contact">contacto </h2>
-            <h3 class="h3_contact">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </h3>
-            <ul id="ul_social_medias">   
-                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-3x fa-facebook-square"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-3x fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-3x fa-twitter-square"></i></a></li>   
-            </ul>
+    <footer class="container-fluid text-white" id="contacto">  
+        <div class="container row">
+            <div class="col  offset-1 col-12 col-sm-10 col-lg-5 offset-sm-1 mb-3 ">
+                <div class="container">
+                    <div class="card-body">
+                        <h2 class="row card-title wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">Contacto </h2>
+                        <h3 class="row card-text h3_contact wow animate__fadeInLeft mb-3" data-wow-duration="1s" data-wow-delay="0s">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </h3>
+                        <ul class="list-inline row wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
+                            <li class="list-inline-item"><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-3x fa-facebook-square"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-3x fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-3x fa-twitter-square"></i></a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- formulario para hacer participe al usuario -->
+            <form class="col d-flex flex-column col-12 col-sm-10 col-lg-5 offset-sm-1 mt-5 " action="" method="post">
+                <label for="name">
+                    <input class="form-control dark wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
+                </label>                
+                    <label for="email">
+                    <input class="form-control dark wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+                </label>                
+                    <label for="asunto">
+                    <input class="form-control dark wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
+                </label>                
+                    <label for="cuentanos">
+                    <textarea class="form-control dark wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                </label>                
+                <button class="btn-outline-light dark btn wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
+            </form>
         </div>
-        <!-- formulario para hacer participe al usuario -->
-        <form action="" method="post">
-            <label for="name">
-                <input type="text" id="name" placeholder="Nombre" required>
-            </label>                
-                <label for="email">
-                <input type="email" id="email" placeholder="Email" required>
-            </label>                
-                <label for="asunto">
-                <input type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">
-                <textarea id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
-            </label>                
-            <button id="submite" type="submit" name="enviar" >Enviar</button>   
-        </form>
-    
     </footer>
 
 </body>

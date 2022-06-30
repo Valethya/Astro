@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/24dc679615.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="astro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,37 +15,42 @@
     <link rel="shortcut icon" href="assets/astronegro.ico" type="image/x-icon">
     <link rel="stylesheet" href="recursos/animate.css">
     <script src="recursos/wow.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
 <body id="index">  
         <header>
-            <a href="#first_section" >
-                <img class="logo" src="assets/astronegro.png"> 
-            </a>
-        
-            <nav class="navegador">
-                <ul id="ul_section_nav">
-                    <li class="li_sections_nav">
-                        <a class="link_section_nav" href="#second_section">Mas que Estrellas</a>
+          <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+                <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class=" col-1 navbar-brand float-right" href="#first_section"><img src="assets/astronegro.png"> <span class="sr-only">(current)</span></a>
+                
+                <div class="navbar-collapse collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#second_section">Mas que Estrellas</a>
                     </li>
-                    <li class="li_sections_nav">
-                        <a class="link_section_nav" href="#third_section">Observacion</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#third_section">Observacion</a>
                     </li>
-                    <li class="li_sections_nav">
-                        <a class="link_section_nav" href="#fourth_section">Historias del universo</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fourth_section">Historias del universo</a>
                     </li>
-                    <li class="li_sections_nav">
-                        <a class="link_section_nav" href="#fifth_section">Galeria</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fifth_section">Galeria</a>
                     </li>
-                    <li class="li_sections_nav">
-                        <a class="link_section_nav" href="#contacto">contacto</a>
-                    </li>
-                </ul>       
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fifth_section">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <main>
+        <main id="index">
      <!-- aqui tenemos la seccion que recibe al usuario con un video de fondo -->
             <section id="first_section">
                
@@ -67,7 +73,7 @@
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                         Aenean commodo ligula eget dolor. Aenean massa.
                     </h3>
-                    <a href="secciones/masqueestrellas.html" target="_blank">
+                    <a class="empecemos"  href="secciones/masqueestrellas.html" target="_blank">
                      <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
                     </a>
                 </div>
@@ -83,7 +89,7 @@
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.
                     </h3>
-                    <a href="secciones/comoobservarelcielo.html" target="_blank">
+                    <a class="empecemos" href="secciones/comoobservarelcielo.html" target="_blank">
                         <div class="wow animate__fadeInRight" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
                     </a>
                 </div>
@@ -96,7 +102,7 @@
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Lorem ipsum dolor sit amet.  
                     </h3>
-                    <a href="secciones/historiasdeluniverso.html" target="blank">
+                    <a class="empecemos"  href="secciones/historiasdeluniverso.html" target="blank">
                         <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
                     </a>    
                 </div>
@@ -110,7 +116,7 @@
                     <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </h3>
-                    <a href="secciones/galeria.html" target="_blank">
+                    <a class="empecemos"  href="secciones/galeria.html" target="_blank">
                         <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
                     </a>
                 </div>

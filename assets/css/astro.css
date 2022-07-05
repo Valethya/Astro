@@ -9,6 +9,7 @@ html{
 
 main{
     margin-top: calc(10px + 4em);
+    padding-top: 4em;
 }
 /* probando escalas tipograficas */
 body {
@@ -59,14 +60,37 @@ body {
     text-align: justify;  
     height: auto;
    }
+   @keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
 
-   .box_article:nth-child(1){
+.box_article:hover h2{
+    animation: fluido 2s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box_article:hover .fa-heart{
+    animation: fluido 2s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box_article:nth-child(1){
     grid-column-start:span 3;
    }
-   .box_article:nth-child(6){
+.box_article:nth-child(6){
     grid-column-end: span 2;
    }
-   .box_article{
+.box_article{
     background-color:rgba(255, 254, 254, 0.105);
     padding: 1em;
     height: 100%;
@@ -74,6 +98,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+
    /* fin probando grid en articulos */
 
 .li_date_like{
@@ -85,9 +110,7 @@ body {
 }
 
 /* estilos del header y nav*/
-header{
-   
-}
+
 #navbarColor01{
     background-color: #0a0a0a;
 }
@@ -95,7 +118,7 @@ header{
 .logo{
     margin-left: 1rem;
     margin-top: -1rem;
-    height: 6em;
+    height: 4em;
     width: auto;
 }
 
@@ -103,17 +126,16 @@ nav{
     float: right;
     top: 0;
     width: 100%;
-    height: auto;
+    min-height: 8vh;
     background-color:#0a0a0a;
+   
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+    font-size: 1.5rem;
 }
 
-#ul_section_nav{
-    margin: 1.5em;
-}
-
-.link_section_nav{
-    padding: 1em;
-}
 /* estilos del footer y form */
 footer{
     display: flex;
@@ -121,8 +143,8 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height:calc(100vh - 80px);
-    background-image: url(./assets/astronaut_transparent.png);
+    height:100vh;
+    background-image: url(../imagenes/astronaut_transparent.png);
     background-size: cover;
     background-position: 10%;
 }
@@ -369,7 +391,7 @@ section{
 
 /* estilos mas que estrellas */
 .introduction{
-    margin: 4em;
+    margin: 0em 4em 4em;
 }
 
 /* estilos de la galeria */

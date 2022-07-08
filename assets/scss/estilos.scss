@@ -65,12 +65,161 @@ a:hover{
     margin: 0.5rem;
 }
 
-// section article
-
 // estilos mas que estrellas
 .introduction{
     margin: 0em 4em 4em;
 }
 
+// medias queries
 
-// footer
+@media  screen and (max-width: 767.98px) {
+    html{
+        font-size: 50%;
+    }
+    p{
+      font-size: 16px;
+    }
+    
+    .section_article{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        .box_article:nth-child(1){
+            grid-column-start:span 2;
+           }
+        .box_article:nth-child(6){
+            grid-column-end: span 2;
+           }
+       }     
+ 
+    /* footer */
+    footer{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        .title_p_contact{
+            align-items: center;
+            height: 40%;
+            width: 50%;
+            margin-left:0;
+            #title_contact{
+                transform: translate(0em, -12em);
+            }
+            .h3_contact{
+                text-align: center;
+            }
+            #ul_social_medias{
+                width: 100%;
+                justify-content: center;
+            } 
+        }
+        form{
+            width: 80%; 
+            margin-right: 0;
+        }    
+    }
+    
+    /* estilos de las secciones del index */
+
+section{
+    height:auto;  
+    .box_title_p{
+        background-color: rgba(0, 0, 0, 0.626);
+        width:40vw; 
+        height: auto;
+        position: absolute;
+        box-shadow: #939393 0px 0px 30px;
+        animation: brillo 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    }
+     
+}
+    /* second_section */
+
+.img_second_section{
+    width: 100vw;
+    height:100vh;
+} 
+
+/* third_section */
+.img_third_section{
+    width: 100vw; 
+    transform: translate(0);
+    object-position: 35%;
+}
+
+.img_third_section_2{
+    left: 70%;   
+}
+
+/* fourth section */
+.img_fourth_section{
+    width:100% ;
+    transform: translate(0);
+}
+
+.img_fourth_section_2{
+    width:30% ;
+    left: 10%;
+    top: 65%;
+}
+
+.title_p_fourth_section{
+    z-index: 1;
+}
+/* fifth section */
+#fifth_section{
+    flex-direction: column;
+    justify-content: space-evenly;
+    .title_fifth_section{
+        background-color: rgba(255, 255, 255, 0.05);
+        width: 80%;
+        margin: 80px 1em 4em;
+        position: relative;
+    }
+    
+    .box_img_fifth_section{
+        width: 100%;
+        height: 15vh;
+        margin-top: 0px;
+        .p_img_fifth_section{
+            width: 100%;
+            height: 100%;
+            position: absolute;  
+            background: rgba(0, 0, 0,0.2);
+            padding: 1em;
+            text-align: center;
+        }
+        .img_fifth_section{
+            height: 100%;      
+        }    
+    }
+}
+
+
+
+/* estilos de como observar el cielo */
+.img_brujula{
+    width: 60%;
+    float: right;  
+}
+}
+
+@media screen and (max-width:575px) {
+   
+
+.section_article{
+    display:flex;  
+   }
+/* galeria */
+   .box_gallery{
+    grid-template-columns:repeat(2, 1fr);
+    .box_img_p_gallery{
+        overflow: hidden;
+       }
+       .box_img_p_gallery:nth-child(3){
+        grid-column-start:span 2;
+       }
+       .box_img_p_gallery:nth-child(4){
+        grid-column-start: span 1 ;
+       }
+    
+   }
+}

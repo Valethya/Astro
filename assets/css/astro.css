@@ -371,13 +371,13 @@ section{
     width: 100%;
     height: 30%;
     font-weight: bold;
-    text-align: justify;   
+    
 }
 
 /* estilos de como observar el cielo */
 #obserbar{
     padding: 4rem;
-    text-align: justify;
+   
 }
 .img_brujula{
     width: 40%;

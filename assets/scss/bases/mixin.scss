@@ -1,0 +1,19 @@
+@mixin transform($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    transform: $propiedad;
+  }
+@mixin background-clip($propiedad) {
+    background-clip: $propiedad;
+    -webkit-background-clip: $propiedad;
+    -moz-background-clip: $propiedad;
+}
+@mixin color_tittle($section){
+  color: map-get($color_title, $section); 
+}
+
+@each  $section, $colors in $color-title {
+    .h2_#{$section}{
+    @include color_tittle($section);
+    }
+}

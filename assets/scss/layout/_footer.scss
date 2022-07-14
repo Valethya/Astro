@@ -1,33 +1,22 @@
+
 footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3, 1fr);
     align-items: center;
     height:100vh;
     background-image: url(../imagenes/astronaut_transparent.png);
     background-size: cover;
-    background-position: 10%;
-    .title_p_contact{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 55%;
-        width: 35%;
-        margin-left: 5em;
-        .h3_contact{
-            font-family: 'bebas neue', cursive;
-        }
-        #ul_social_medias{
-            width: 30%;
-            display: flex;
-            margin-top: 2rem;
-        } 
-    }
+    background-position: center;
+    grid-template-areas:
+        "title form" 
+        "texto form"
+        "texto form" ;
+    
     form{
-        width: 35%; 
-        margin-right: 5em;
+        width: 70%; 
+        margin-left: 5rem;
+        grid-area: form;
         label{
             display:inline;
         }
@@ -66,4 +55,31 @@ footer{
             color: #fff;   
         }
     }
+    #title_contact{
+        margin-left: 5rem;
+        margin-top: 4rem;
+
+    }
+
+    .title_p_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 80%;
+        width: 70%;
+        margin-left: 5em;
+        grid-area: texto;
+        .h3_contact{
+            font-family: 'bebas neue', cursive;
+            grid-area: title;
+        }
+        #ul_social_medias{
+            width: 30%;
+            display: flex;
+            margin-top: 2rem;
+        } 
+            
+    }
+       
 }

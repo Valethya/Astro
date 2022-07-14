@@ -5,32 +5,19 @@
   color: #e73c7e; }
 
 footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   height: 100vh;
   background-image: url(../imagenes/astronaut_transparent.png);
   background-size: cover;
-  background-position: 10%; }
-  footer .title_p_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 55%;
-    width: 35%;
-    margin-left: 5em; }
-    footer .title_p_contact .h3_contact {
-      font-family: 'bebas neue', cursive; }
-    footer .title_p_contact #ul_social_medias {
-      width: 30%;
-      display: flex;
-      margin-top: 2rem; }
+  background-position: center;
+  grid-template-areas: "title form"  "texto form" "texto form"; }
   footer form {
-    width: 35%;
-    margin-right: 5em; }
+    width: 70%;
+    margin-left: 5rem;
+    grid-area: form; }
     footer form label {
       display: inline; }
     footer form input {
@@ -63,6 +50,25 @@ footer {
       border: 0;
       border-bottom: 2px solid #fff;
       color: #fff; }
+  footer #title_contact {
+    margin-left: 5rem;
+    margin-top: 4rem; }
+  footer .title_p_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 80%;
+    width: 70%;
+    margin-left: 5em;
+    grid-area: texto; }
+    footer .title_p_contact .h3_contact {
+      font-family: 'bebas neue', cursive;
+      grid-area: title; }
+    footer .title_p_contact #ul_social_medias {
+      width: 30%;
+      display: flex;
+      margin-top: 2rem; }
 
 nav {
   float: right;
@@ -182,6 +188,9 @@ section {
     text-align: right;
     width: 30%;
     margin: 5em; }
+  #first_section .astro {
+    font-size: 1.777rem;
+    font-family: "Bebas Neue", sans-serif; }
 
 .img_second_section {
   width: 60vw;
@@ -317,15 +326,16 @@ a:hover {
       grid-column-end: span 2; }
   /* footer */
   footer {
-    flex-direction: column-reverse;
-    justify-content: flex-start; }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    footer #title_contact {
+      margin-left: 0; }
     footer .title_p_contact {
       align-items: center;
       height: 40%;
       width: 50%;
       margin-left: 0; }
-      footer .title_p_contact #title_contact {
-        transform: translate(0em, -12em); }
       footer .title_p_contact .h3_contact {
         text-align: center; }
       footer .title_p_contact #ul_social_medias {
@@ -333,7 +343,10 @@ a:hover {
         justify-content: center; }
     footer form {
       width: 80%;
-      margin-right: 0; }
+      margin-right: 0;
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left: 0; }
   /* estilos de las secciones del index */
   section {
     height: auto; }

@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aprende a observar el cielo nocturno y identificar los puntos cardinales y sus objetos astronomicos mas importantes ">
+    <meta name="keywords" content="estrellas, cielo, astro, astronomia, norte, sur, este, oeste, cenit, nadir, planetas, luna, observacion, constelaciones, puntos cardinales">
     <script src="https://kit.fontawesome.com/24dc679615.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../normalize.css">
-	<link rel="stylesheet" type="text/css" href="../astro.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/astro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
     <title>Como observar el cielo</title>
-    <link rel="shortcut icon" href="../assets/astronegro.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/imagenes/astronegro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
     <header>
-        <a href="../" >
-            <img class="logo" src="../assets/astronegro.png"width="100px"> 
-        </a>
-    
-        <nav class="navegador">
-            <ul id="ul_section_nav">
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/masqueestrellas.html">Mas que Estrellas</a>
+        <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+            <a class="navbar-brand float-right" href="../index.html"><img class="logo" src="../assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link"  href="./masqueestrellas.html">Mas que Estrellas</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/comoobservarelcielo.html">Observacion</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./comoobservarelcielo.html">Observacion<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/historiasdeluniverso.html">Historias del universo</a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./historiasdeluniverso.html">Historias del universo</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="../secciones/galeria.html">Galeria</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
                 </li>
-                <li class="li_sections_nav">
-                    <a class="link_section_nav" href="#contacto">contacto</a>
-                </li>
-            </ul>       
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -60,7 +69,7 @@
             viverra quis, feugiat a.
         </p>
         
-        <img class="img_brujula" src="../assets/brujula_blanca.png" alt="brujula" width="300px">
+        <img class="img_brujula" src="../assets/imagenes/brujula_blanca.png" alt="brujula" width="300px">
 
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
@@ -109,11 +118,11 @@
     <footer id="contacto">  
         
         <div class="title_p_contact">
-            <h2 id="title_contact">contacto </h2>
-            <h3 class="h3_contact">
+            <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
+            <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
             </h3>
-            <ul id="ul_social_medias">   
+            <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
                 <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-3x fa-facebook-square"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-3x fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-3x fa-twitter-square"></i></a></li>   
@@ -122,18 +131,18 @@
         <!-- formulario para hacer participe al usuario -->
         <form action="" method="post">
             <label for="name">
-                <input type="text" id="name" placeholder="Nombre" required>
+                <input class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
             </label>                
                 <label for="email">
-                <input type="email" id="email" placeholder="Email" required>
+                <input class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
             </label>                
                 <label for="asunto">
-                <input type="text" id="asunto" placeholder="Asunto" required>
+                <input class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
             </label>                
                 <label for="cuentanos">
-                <textarea id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
             </label>                
-            <button id="submite" type="submit" name="enviar" >Enviar</button>   
+            <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
         </form>
     
     </footer>

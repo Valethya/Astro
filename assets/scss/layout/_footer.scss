@@ -1,0 +1,85 @@
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3, 1fr);
+    align-items: center;
+    height:100vh;
+    background-image: url(../imagenes/astronaut_transparent.png);
+    background-size: cover;
+    background-position: center;
+    grid-template-areas:
+        "title form" 
+        "texto form"
+        "texto form" ;
+    
+    form{
+        width: 70%; 
+        margin-left: 5rem;
+        grid-area: form;
+        label{
+            display:inline;
+        }
+        input{
+            width: 100%;
+            margin: 0.5em;
+            padding: 0.5em;
+            height: 2em;
+            background-color: rgba(255, 255, 255, 0.13);
+            border: 0;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            color: #fff;
+        }
+        ::placeholder{
+            color: #fff;
+        }  
+        textarea{
+            width: 100%;
+            margin: 0.5em;
+            padding: 0.5em;
+            background-color: rgba(255, 255, 255, 0.13);
+            resize: none; 
+            border: 0;
+            border-bottom: 2px solid #fff;
+            outline: none;
+            color: #fff;  
+        }
+        #submite{
+            margin: 0.5em;
+            padding: 0.5em;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.502);
+            border: 0;
+            border-bottom: 2px solid #fff;
+            color: #fff;   
+        }
+    }
+    #title_contact{
+        margin-left: 5rem;
+        margin-top: 4rem;
+
+    }
+
+    .title_p_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 80%;
+        width: 70%;
+        margin-left: 5em;
+        grid-area: texto;
+        .h3_contact{
+            font-family: 'bebas neue', cursive;
+            grid-area: title;
+        }
+        #ul_social_medias{
+            width: 30%;
+            display: flex;
+            margin-top: 2rem;
+        } 
+            
+    }
+       
+}

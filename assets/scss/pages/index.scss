@@ -1,0 +1,133 @@
+// estilos generales de las secciones del index
+#index{
+    margin-top: 0px;
+}
+section{
+    overflow: hidden; 
+    height: calc(100vh + 80px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .box_title_p{
+        background-color: rgba(0, 0, 0, 0.167);
+        width:35vw; 
+        height: auto;
+        padding: 2em;
+        .fa-rocket{
+            animation: spin 1s cubic-bezier(.36,.07,.19,.97) 2;
+            animation-delay: 1s;
+         }
+    }
+    .fa-rocket{
+        animation: spin 1s cubic-bezier(.36,.07,.19,.97) 2;
+        animation-delay: 1s;
+     }
+     @keyframes spin {
+        10%, 90% {
+            @include transform( rotate(15deg));
+        }
+        
+        20%, 80% {
+            @include transform(rotate(-15deg));
+        }
+      
+        30%, 50%, 70% {
+            @include transform(rotate(15deg));
+        }
+      
+        40%, 60% {
+            @include transform(rotate(-15deg));
+        }
+      }
+}
+// estilos mas especificos del index
+// primera seccion
+#first_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;  
+    height: calc(100vh + 80px);
+    #video_first_section{   
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+    .box_p_first_section{
+        text-align: right; 
+        width: 30%;
+        margin: 5em;
+    }
+    .astro{
+        font-size: 1.777rem;
+        font-family: $title_font;
+    }
+}
+// segunda seccion
+.img_second_section{
+    width: 60vw;
+    height:70vh;
+    object-fit: cover;
+}
+// tercera seccion
+.img_third_section{
+    width: 60vw; 
+    height: 100vh; 
+    object-fit: cover;
+    @include transform (translate(-10%));
+}
+
+.img_third_section_2{
+    width: 25%;
+    position: absolute;  
+    left: 44%;   
+} 
+// cuarta seccion
+.img_fourth_section{
+    width:60% ;
+    height: 100vh;
+    @include transform (translate(25px));
+    object-fit: cover;
+}
+
+.img_fourth_section_2{
+    width:30% ;
+    position: absolute;
+    right: 25%;
+    top: 35%;
+}
+// quinta seccion
+#fifth_section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .title_fifth_section{
+        width: 30%;
+    }
+    .box_img_fifth_section{
+        display: flex;
+        flex-direction: column;
+        width: 12%;
+        height: calc(100vh - 80px);
+        margin-top: 80px; 
+        .img_fifth_section{
+            width: 100%;
+            height: 60%;
+            object-fit: cover;       
+        }
+        .p_img_fifth_section{
+            width: 100%;
+            height: 30%;
+            font-weight: bold;  
+        }
+        
+    }
+}

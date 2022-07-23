@@ -64,11 +64,15 @@ a:hover{
     color: #fff;
     margin: 0.5rem;
 }
+:focus-visible{
+    outline: none;
+}
 
 // estilos mas que estrellas
 .introduction{
     margin: 0em 4em 4em;
 }
+
 
 // medias queries
 
@@ -96,6 +100,9 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        background-position: bottom;
+        background-size: auto;
+    
         #title_contact{
             margin-left: 0;
         }
@@ -123,7 +130,7 @@ a:hover{
     
     /* estilos de las secciones del index */
 
-section{
+    section{
     height:auto;  
     .box_title_p{
         background-color: rgba(0, 0, 0, 0.626);
@@ -134,76 +141,76 @@ section{
         animation: brillo 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
     }
      
-}
+    }
     /* second_section */
 
-.img_second_section{
-    width: 100vw;
-    height:100vh;
-} 
+    .img_second_section{
+        width: 100vw;
+        height:100vh;
+    } 
 
-/* third_section */
-.img_third_section{
-    width: 100vw; 
-    transform: translate(0);
-    object-position: 35%;
-}
-
-.img_third_section_2{
-    left: 70%;   
-}
-
-/* fourth section */
-.img_fourth_section{
-    width:100% ;
-    transform: translate(0);
-}
-
-.img_fourth_section_2{
-    width:30% ;
-    left: 10%;
-    top: 65%;
-}
-
-.title_p_fourth_section{
-    z-index: 1;
-}
-/* fifth section */
-#fifth_section{
-    flex-direction: column;
-    justify-content: space-evenly;
-    .title_fifth_section{
-        background-color: rgba(255, 255, 255, 0.05);
-        width: 80%;
-        margin: 80px 1em 4em;
-        position: relative;
+    /* third_section */
+    .img_third_section{
+        width: 100vw; 
+        transform: translate(0);
+        object-position: 35%;
     }
-    
-    .box_img_fifth_section{
-        width: 100%;
-        height: 15vh;
-        margin-top: 0px;
-        .p_img_fifth_section{
-            width: 100%;
-            height: 100%;
-            position: absolute;  
-            background: rgba(0, 0, 0,0.2);
-            padding: 1em;
-            text-align: center;
+
+    .img_third_section_2{
+        left: 70%;   
+    }
+
+    /* fourth section */
+    .img_fourth_section{
+        width:100% ;
+        transform: translate(0);
+    }
+
+    .img_fourth_section_2{
+        width:30% ;
+        left: 10%;
+        top: 65%;
+    }
+
+    .title_p_fourth_section{
+        z-index: 1;
+    }
+    /* fifth section */
+    #fifth_section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title_fifth_section{
+            background-color: rgba(255, 255, 255, 0.05);
+            width: 80%;
+            margin: 80px 1em 4em;
+            position: relative;
         }
-        .img_fifth_section{
-            height: 100%;      
-        }    
+        
+        .box_img_fifth_section{
+            width: 100%;
+            height: 15vh;
+            margin-top: 0px;
+            .p_img_fifth_section{
+                width: 100%;
+                height: 100%;
+                position: absolute;  
+                background: rgba(0, 0, 0,0.2);
+                padding: 1em;
+                text-align: center;
+            }
+            .img_fifth_section{
+                height: 100%;      
+            }    
+        }
     }
-}
 
 
 
-/* estilos de como observar el cielo */
-.img_brujula{
-    width: 60%;
-    float: right;  
-}
+    /* estilos de como observar el cielo */
+    .img_brujula{
+        width: 60%;
+        float: right;  
+    }
 }
 
 @media screen and (max-width:575px) {

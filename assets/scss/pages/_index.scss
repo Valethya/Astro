@@ -16,32 +16,32 @@ section{
         width:35vw; 
         height: auto;
         padding: 2em;
+        .empecemos{
+            
+        }
         .fa-rocket{
             animation: spin 1s cubic-bezier(.36,.07,.19,.97) 2;
             animation-delay: 1s;
          }
+         @keyframes spin {
+            10%, 90% {
+                @include transform( rotate(15deg));
+            }
+            
+            20%, 80% {
+                @include transform(rotate(-15deg));
+            }
+          
+            30%, 50%, 70% {
+                @include transform(rotate(15deg));
+            }
+          
+            40%, 60% {
+                @include transform(rotate(-15deg));
+            }
+          }
     }
-    .fa-rocket{
-        animation: spin 1s cubic-bezier(.36,.07,.19,.97) 2;
-        animation-delay: 1s;
-     }
-     @keyframes spin {
-        10%, 90% {
-            @include transform( rotate(15deg));
-        }
-        
-        20%, 80% {
-            @include transform(rotate(-15deg));
-        }
-      
-        30%, 50%, 70% {
-            @include transform(rotate(15deg));
-        }
-      
-        40%, 60% {
-            @include transform(rotate(-15deg));
-        }
-      }
+   
 }
 // estilos mas especificos del index
 // primera seccion
@@ -62,7 +62,7 @@ section{
     }
     .box_p_first_section{
         text-align: right; 
-        width: 30%;
+        width: 35%;
         margin: 5em;
     }
     .astro{
@@ -110,7 +110,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-evenly;
     .title_fifth_section{
-        width: 30%;
+        width: 35%;
     }
     .box_img_fifth_section{
         display: flex;

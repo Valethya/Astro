@@ -5,6 +5,7 @@ footer{
     grid-template-rows:repeat(3, 1fr);
     align-items: center;
     height:100vh;
+    overflow: hidden;
     background-image: url(../imagenes/astronaut_transparent.png);
     background-size: cover;
     background-position: center;

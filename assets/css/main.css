@@ -218,6 +218,129 @@ nav {
     .section_article .box_article .fa-heart, .section_article .box_article:hover h2 {
       color: crimson; }
 
+.back {
+  position: absolute;
+  top: 10em;
+  left: 40px;
+  width: 100px; }
+  .back ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    list-style: none;
+    opacity: 0; }
+    .back ul li {
+      white-space: nowrap; }
+      .back ul li a {
+        text-decoration: none; }
+    .back ul.nav-history {
+      padding-left: 36px;
+      padding-top: 25px;
+      pointer-events: none; }
+    .back ul li {
+      margin-bottom: 5px; }
+      .back ul li::after {
+        content: '';
+        position: absolute;
+        left: 12px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #e6eaef;
+        transform: scale(0.9);
+        transition: all 0.2s ease; }
+      .back ul li:not(:last-child)::before {
+        content: '';
+        position: absolute;
+        left: 17px;
+        margin-top: 10px;
+        width: 2px;
+        height: 35px;
+        background: #e6eaef;
+        transition: all 0.2s ease; }
+      .back ul li.active {
+        pointer-events: none; }
+        .back ul li.active::after {
+          background: #e8eaed; }
+        .back ul li.active a {
+          color: #8ac0fa;
+          font-weight: bold; }
+      .back ul li a {
+        color: #023872;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.2s ease;
+        padding: 0; }
+        .back ul li a:hover {
+          color: #077af6; }
+  .back:hover {
+    width: auto;
+    backdrop-filter: blur(1px); }
+    .back:hover .menu-back {
+      opacity: 1;
+      transform: translateY(0);
+      padding: 0em 3em 2em 2em; }
+    .back:hover .btn-back div {
+      background: rgba(65, 138, 216, 0.25); }
+    .back:hover .btn-back span {
+      transform: translateX(0);
+      opacity: 1; }
+    .back:hover ul {
+      opacity: 1; }
+      .back:hover ul.nav-history {
+        transform: translateY(0);
+        pointer-events: auto; }
+        .back:hover ul.nav-history li {
+          margin-bottom: 8px; }
+          .back:hover ul.nav-history li::after {
+            background: #e6eaef;
+            transform: translateY(6px); }
+          .back:hover ul.nav-history li.active::after {
+            background: #077af6; }
+          .back:hover ul.nav-history li a {
+            opacity: 1;
+            transform: translateY(0); }
+
+.back:hover .btn-back div svg path,
+.back:hover .btn-back div svg polyline {
+  stroke: #418ad8; }
+
+.btn-back {
+  display: inline-block; }
+  .btn-back div {
+    position: relative;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e8eaed;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .btn-back div svg {
+      fill: none; }
+  .btn-back span {
+    display: inline-block;
+    color: #023872;
+    margin-left: 10px;
+    line-height: 34px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.2s ease;
+    font-size: 20px;
+    font-weight: bold; }
+  .btn-back:hover span {
+    color: #077af6; }
+
+.btn-back div svg path,
+.btn-back div svg polyline {
+  stroke: #9098a9;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+
 .title_gallery {
   margin: 4rem; }
 
@@ -370,11 +493,17 @@ section {
       font-weight: bold; }
 
 #obserbar {
-  padding: 4rem; }
+  padding: 2em 4em 4em 4em; }
 
 .img_brujula {
   width: 40%;
   float: right; }
+
+.observar {
+  background-image: url(../imagenes/camara_cielo.jpg); }
+
+.estrellas {
+  background-image: url(../imagenes/observando_cielo.jpg); }
 
 * {
   font-family: 'Montserrat', sans-serif; }
@@ -385,8 +514,7 @@ html {
   /*16px*/ }
 
 main {
-  margin-top: calc(10px + 4em);
-  padding-top: 4em; }
+  margin-top: calc(10px + 4em); }
 
 body {
   background: #0a0a0a;
@@ -442,8 +570,15 @@ a:hover {
 :focus-visible {
   outline: none; }
 
+.img_inicio {
+  height: 65vh;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom; }
+
 .introduction {
-  margin: 0em 4em 4em; }
+  margin: 0em 4em 4em;
+  margin-top: 2em; }
 
 @media screen and (max-width: 767.98px) {
   html {

@@ -53,6 +53,22 @@
         </nav>
     </header>
     <main id="historias_universo">
+        <div class="back">
+            <a href="../index.html" class="btn-back">
+                <div>
+                <svg width="16px" height="14px" viewBox="0 0 16 14">
+                    <path d="M1,7 L15,7"></path>
+                    <polyline points="7 1 1 7 7 13"></polyline>
+                </svg>
+                </div>
+                <span>Back</span>
+            </a>
+            <div class="menu-back">
+                <ul class="nav-history">
+                <li class="active"><a href="historiasdeluniverso.html">Historias del universo</a></li>
+                </ul>
+            </div>
+        </div>    
         <div class="introduction">
             <h1>Historias del universo</h1>
 
@@ -207,17 +223,17 @@
        
         <!-- formulario para hacer participe al usuario -->
         <form action="" method="post">
-            <label for="name">
-                <input class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
+            <label for="name">Nombre
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
             </label>                
-                <label for="email">
-                <input class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+                <label for="email">E-mail
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+            </label>               
+                <label for="asunto">Asunto
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
             </label>                
-                <label for="asunto">
-                <input class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">
-                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                <label for="cuentanos">Cuentanos
+                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
             </label>                
             <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
         </form>

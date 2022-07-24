@@ -54,22 +54,29 @@
     </header>
 
     <main id="mas_que_estrellas">
+        <div class="back">
+            <a href="../index.html" class="btn-back">
+                <div>
+                <svg width="16px" height="14px" viewBox="0 0 16 14">
+                    <path d="M1,7 L15,7"></path>
+                    <polyline points="7 1 1 7 7 13"></polyline>
+                </svg>
+                </div>
+                <span>Back</span>
+            </a>
+            <div class="menu-back">
+                <ul class="nav-history">
+                <li class="active"><a href="masqueestrellas.html">Mas que estrellas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="img_inicio estrellas"></div>
        <div class="introduction">
-            <h1>Mas que estrellas</h1>
+            <h1>Más que estrellas</h1>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor. Aenean massa. 
-                Cum sociis natoque penatibus et magnis dis parturient montes, 
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
-                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
-                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-                Cras dapibus. Vivamus elementum semper nisi. 
-                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-                consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a,
+                Nuestro ierlo
             </p>
         </div>  
 <!-- tarjeta con los diferentes articulos -->
@@ -78,8 +85,7 @@
                 <article>
                     <h2>Estrellas</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Siempre que vemos hacia arriba al firmamento podemos ver las estrellas, aquellas nos han guiado durante miles de años, atravesando mares y desiertos, nos ha fascinado su brillo en las noches oscuras, sin embargo, ¿Sabes que son las estrellas?
                     </p>
                 </article>   
                 <ul>
@@ -178,17 +184,17 @@
        
         <!-- formulario para hacer participe al usuario -->
         <form action="" method="post">
-            <label for="name">
-                <input class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
+            <label for="name">Nombre
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
             </label>                
-                <label for="email">
-                <input class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+                <label for="email">E-mail
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+            </label>               
+                <label for="asunto">Asunto
+                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
             </label>                
-                <label for="asunto">
-                <input class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">
-                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="6" required></textarea>
+                <label for="cuentanos">Cuentanos
+                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
             </label>                
             <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
         </form>

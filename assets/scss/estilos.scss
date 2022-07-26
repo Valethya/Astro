@@ -69,9 +69,10 @@ a:hover{
 .img_inicio{
     height: 65vh;
     width: 100%;
-    background-size: cover;
-    background-position: bottom;
+    object-fit: cover;
+    object-position: bottom;
 }
+
 
 
 
@@ -219,26 +220,71 @@ a:hover{
         width: 60%;
         float: right;  
     }
+    // galeria
+    .box_gallery{
+        .box_img_p_gallery{
+        flex-direction:column;
+        justify-content: space-around;
+        height: calc(100vh - 10em);
+            .wrapper-orbita{
+                position: absolute;
+                right: 50%;
+                top: 65%;
+            }
+            .img-svg{
+                width: 100%;
+                height: 60%;
+                &:hover{
+                    transform: scale(0);
+                    position: static;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .p_li_gallery{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:575px) {
    
 
-.section_article{
-    display:flex;  
-   }
+    .section_article{
+        display:flex;  
+    }
 /* galeria */
-   .box_gallery{
-    grid-template-columns:repeat(2, 1fr);
-    .box_img_p_gallery{
-        overflow: hidden;
-       }
-       .box_img_p_gallery:nth-child(3){
-        grid-column-start:span 2;
-       }
-       .box_img_p_gallery:nth-child(4){
-        grid-column-start: span 1 ;
-       }
-    
-   }
+    .box_gallery{
+        .box_img_p_gallery{
+            flex-direction:column;
+            justify-content: space-around;
+            .wrapper-orbita{
+                position: absolute;
+                right: 50%;
+                top: 65%;
+            }
+                .img-svg{
+                    width: 100%;
+                    height: 60%;
+                    &:hover{
+                        transform: scale(0);
+                        position: static;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    
+                }
+            
+            .p_li_gallery{
+                width: 100%;
+            }
+        }
+    }
 }

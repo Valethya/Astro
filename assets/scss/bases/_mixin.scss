@@ -11,6 +11,11 @@
 @mixin color_tittle($section){
   color: map-get($color_title, $section); 
 }
+@mixin centrado {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%)
+}
 
 @each  $section, $colors in $color-title {
     .h2_#{$section}{

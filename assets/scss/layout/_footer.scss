@@ -126,57 +126,56 @@ footer{
             width: 30%;
             display: flex;
             margin-top: 2rem;
-            .fa-facebook-square:hover{
-                color:blue;
-                background: #fff;
-                @include transform(scale(1.1));
+            li{
+                padding: 0.5em;
+                margin: 1em;
+                height: 70px;
+                width: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border-radius: 50%;
+                border: 1px solid transparent;
+                animation: orbita 3s linear infinite;
+                transition: 1s;
+                .fa-brands:before{
+                    animation: contra-orbita 3s linear infinite;
+                }
+                
+                &:hover{
+                border-radius: 50%;
+                border: 1px solid $bread;
+                animation: orbita 3s linear infinite;
+              
+                    &::before{
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -5px;
+                        background-color: $bread-hover;  
+                    }
+                }
+                .fa-brands{
+                    height: 70px;
+                    width: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            
             }
-            a:focus .fa-facebook-square{
-                color:blue;
-                background: #fff;
-                @include transform(scale(1.1));
+            @keyframes orbita {
+                to{transform: rotate(0deg);}
+                from{transform: rotate(360deg);}    
             }
-            .fa-facebook-square{
-                height: 39px;
-                width: 40px;
-                line-height: 0.8;
-                border-radius: 30%;
-                transition: 2s;
+            @keyframes contra-orbita {
+                to{transform: rotate(-0deg);}
+                from{transform: rotate(-360deg);}    
             }
-            .fa-instagram:hover{
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-                @include transform(scale(1.1));
-                transition: 2s;
-            }
-            a:focus .fa-instagram{
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-                @include transform(scale(1.1));
-            }
-            .fa-instagram{
-                height: 40px;
-                width: 40px;
-                line-height: 0.9;
-                border-radius: 30%;
-                transition: 2s;
-            }
-            .fa-twitter-square:hover{
-                color:deepskyblue;
-                background: #fff;
-                @include transform(scale(1.1));
-            }
-            a:focus .fa-twitter-square{
-                color:deepskyblue;
-                background: #fff;
-                @include transform(scale(1.1));
-            }
-            .fa-twitter-square{
-                height: 39px;
-                width: 40px;
-                line-height: 0.8;
-                border-radius: 30%;
-                transition: 2s;
-            }
-          
+            
         } 
             
     }

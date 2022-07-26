@@ -105,59 +105,51 @@ footer {
       width: 30%;
       display: flex;
       margin-top: 2rem; }
-      footer .title_p_contact #ul_social_medias .fa-facebook-square:hover {
-        color: blue;
-        background: #fff;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      footer .title_p_contact #ul_social_medias a:focus .fa-facebook-square {
-        color: blue;
-        background: #fff;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      footer .title_p_contact #ul_social_medias .fa-facebook-square {
-        height: 39px;
-        width: 40px;
-        line-height: 0.8;
-        border-radius: 30%;
-        transition: 2s; }
-      footer .title_p_contact #ul_social_medias .fa-instagram:hover {
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        transition: 2s; }
-      footer .title_p_contact #ul_social_medias a:focus .fa-instagram {
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      footer .title_p_contact #ul_social_medias .fa-instagram {
-        height: 40px;
-        width: 40px;
-        line-height: 0.9;
-        border-radius: 30%;
-        transition: 2s; }
-      footer .title_p_contact #ul_social_medias .fa-twitter-square:hover {
-        color: deepskyblue;
-        background: #fff;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      footer .title_p_contact #ul_social_medias a:focus .fa-twitter-square {
-        color: deepskyblue;
-        background: #fff;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-      footer .title_p_contact #ul_social_medias .fa-twitter-square {
-        height: 39px;
-        width: 40px;
-        line-height: 0.8;
-        border-radius: 30%;
-        transition: 2s; }
+      footer .title_p_contact #ul_social_medias li {
+        padding: 0.5em;
+        margin: 1em;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        animation: orbita 3s linear infinite;
+        transition: 1s; }
+        footer .title_p_contact #ul_social_medias li .fa-brands:before {
+          animation: contra-orbita 3s linear infinite; }
+        footer .title_p_contact #ul_social_medias li:hover {
+          border-radius: 50%;
+          border: 1px solid #023872;
+          animation: orbita 3s linear infinite; }
+          footer .title_p_contact #ul_social_medias li:hover::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            background-color: #077af6; }
+        footer .title_p_contact #ul_social_medias li .fa-brands {
+          height: 70px;
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+
+@keyframes orbita {
+  to {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg); } }
+
+@keyframes contra-orbita {
+  to {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(-360deg); } }
 
 nav {
   float: right;
@@ -369,6 +361,7 @@ nav {
     align-items: center; }
     .box_gallery .box_img_p_gallery .wrapper-orbita {
       position: absolute;
+      z-index: 100;
       width: 25px;
       height: 25px;
       background: transparent;
@@ -773,7 +766,7 @@ a:hover {
       width: 100%;
       height: 60%; }
       .box_gallery .box_img_p_gallery .img-svg:hover {
-        transform: scale(0);
+        transform: scale(1);
         position: static; }
       .box_gallery .box_img_p_gallery .img-svg img {
         width: 100%;
@@ -795,13 +788,15 @@ a:hover {
       top: 65%; }
     .box_gallery .box_img_p_gallery .img-svg {
       width: 100%;
-      height: 60%; }
+      height: 60%;
+      transition: 1s; }
       .box_gallery .box_img_p_gallery .img-svg:hover {
-        transform: scale(0);
+        transform: scale(1);
         position: static; }
       .box_gallery .box_img_p_gallery .img-svg img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
     .box_gallery .box_img_p_gallery .p_li_gallery {
-      width: 100%; } }
+      width: 100%;
+      transition: 2s; } }

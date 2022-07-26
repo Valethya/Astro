@@ -7,12 +7,22 @@
     height: auto;
 
     .box_article{
-        background-color: $delay-black;
-        padding: 1em;
+        position: relative;
+        background-color:$delay_black;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        h2{
+            margin: 0.5em;
+            position: absolute;
+            top: 0;
+        }
+        article{
+            padding:1em;
+            // border: 1px solid $delay_black;
+            border-top: none; 
+        }
         
         &:nth-child(1){
             grid-column-start:span 3;

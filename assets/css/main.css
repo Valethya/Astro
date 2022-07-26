@@ -186,12 +186,19 @@ nav {
   grid-gap: 1rem;
   height: auto; }
   .section_article .box_article {
+    position: relative;
     background-color: rgba(255, 254, 254, 0.105);
-    padding: 1em;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+    .section_article .box_article h2 {
+      margin: 0.5em;
+      position: absolute;
+      top: 0; }
+    .section_article .box_article article {
+      padding: 1em;
+      border-top: none; }
     .section_article .box_article:nth-child(1) {
       grid-column-start: span 3; }
     .section_article .box_article:nth-child(6) {
@@ -342,40 +349,117 @@ nav {
   stroke-linecap: round; }
 
 .title_gallery {
-  margin: 4rem; }
+  margin: 0rem 4rem 4rem;
+  margin-top: 2rem; }
 
 .box_gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 350px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
   padding: 4em;
-  grid-gap: 1em; }
+  overflow: hidden; }
   .box_gallery .box_img_p_gallery {
     position: relative;
-    overflow: hidden; }
-    .box_gallery .box_img_p_gallery .img_gallery {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+    padding: 1em;
+    align-items: center; }
+    .box_gallery .box_img_p_gallery .wrapper-orbita {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      outline: none;
+      right: 0; }
+      .box_gallery .box_img_p_gallery .wrapper-orbita:hover ~ .p_li_gallery {
+        opacity: 1; }
+      .box_gallery .box_img_p_gallery .wrapper-orbita ul {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .box_gallery .box_img_p_gallery .wrapper-orbita ul li {
+          list-style: none; }
+        .box_gallery .box_img_p_gallery .wrapper-orbita ul .centro {
+          width: 3px;
+          height: 3px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background-color: white;
+          position: absolute; }
+        .box_gallery .box_img_p_gallery .wrapper-orbita ul .orbita {
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid white;
+          animation: orbitas infinite;
+          top: -50%;
+          left: -50%;
+          transform: translate(-50%, -50%); }
+        .box_gallery .box_img_p_gallery .wrapper-orbita ul .uno {
+          width: 6px;
+          height: 6px;
+          top: 9.5px;
+          left: 9.5px;
+          animation-duration: 2s; }
+        .box_gallery .box_img_p_gallery .wrapper-orbita ul .dos {
+          width: 10px;
+          height: 10px;
+          top: 7.5px;
+          left: 7.5px;
+          animation-delay: 1s;
+          animation-duration: 4s; }
+
+@keyframes orbitas {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(2);
+    opacity: 0; }
+  51% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(2);
+    opacity: 0; } }
     .box_gallery .box_img_p_gallery .p_li_gallery {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 1s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.626);
-      height: 103%;
-      padding: 1em; }
-      .box_gallery .box_img_p_gallery .p_li_gallery .p_gallery {
-        font-weight: bold; }
+      opacity: 0;
+      width: 50%;
+      margin: 1em;
+      text-align: center; }
       .box_gallery .box_img_p_gallery .p_li_gallery .fa-heart, .box_gallery .box_img_p_gallery .p_li_gallery .section_article .box_article:hover h2, .section_article .box_article:hover .box_gallery .box_img_p_gallery .p_li_gallery h2 {
         color: crimson; }
-  .box_gallery .box_img_p_gallery:hover .p_li_gallery {
-    transform: translatey(-100%); }
-  .box_gallery .box_img_p_gallery:nth-child(4) {
-    grid-column-start: span 2; }
-  .box_gallery .box_img_p_gallery:nth-child(5) {
-    grid-row-start: span 2; }
+    .box_gallery .box_img_p_gallery .img-svg {
+      padding: 1.5em;
+      position: relative;
+      width: 50%;
+      height: fit-content; }
+      .box_gallery .box_img_p_gallery .img-svg:hover {
+        transform: scale(1.5);
+        position: absolute; }
+    .box_gallery .box_img_p_gallery svg {
+      stroke: white;
+      position: absolute;
+      width: 20px;
+      height: 20px; }
+      .box_gallery .box_img_p_gallery svg path {
+        fill: none;
+        stroke: white;
+        stroke-width: 1; }
+    .box_gallery .box_img_p_gallery .der-sup {
+      top: 0;
+      right: 0; }
+    .box_gallery .box_img_p_gallery .izq-inf {
+      bottom: 0;
+      left: 0; }
 
 #index {
   margin-top: 0px; }
@@ -499,11 +583,14 @@ section {
   width: 40%;
   float: right; }
 
-.observar {
-  background-image: url(../imagenes/camara_cielo.jpg); }
+.img-meteoritos {
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom; }
 
-.estrellas {
-  background-image: url(../imagenes/observando_cielo.jpg); }
+.img_galaxias {
+  position: relative;
+  top: 0; }
 
 * {
   font-family: 'Montserrat', sans-serif; }
@@ -573,8 +660,8 @@ a:hover {
 .img_inicio {
   height: 65vh;
   width: 100%;
-  background-size: cover;
-  background-position: bottom; }
+  object-fit: cover;
+  object-position: bottom; }
 
 .introduction {
   margin: 0em 4em 4em;
@@ -673,17 +760,48 @@ a:hover {
   /* estilos de como observar el cielo */
   .img_brujula {
     width: 60%;
-    float: right; } }
+    float: right; }
+  .box_gallery .box_img_p_gallery {
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 10em); }
+    .box_gallery .box_img_p_gallery .wrapper-orbita {
+      position: absolute;
+      right: 50%;
+      top: 65%; }
+    .box_gallery .box_img_p_gallery .img-svg {
+      width: 100%;
+      height: 60%; }
+      .box_gallery .box_img_p_gallery .img-svg:hover {
+        transform: scale(0);
+        position: static; }
+      .box_gallery .box_img_p_gallery .img-svg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .box_gallery .box_img_p_gallery .p_li_gallery {
+      width: 100%; } }
 
 @media screen and (max-width: 575px) {
   .section_article {
     display: flex; }
   /* galeria */
-  .box_gallery {
-    grid-template-columns: repeat(2, 1fr); }
-    .box_gallery .box_img_p_gallery {
-      overflow: hidden; }
-    .box_gallery .box_img_p_gallery:nth-child(3) {
-      grid-column-start: span 2; }
-    .box_gallery .box_img_p_gallery:nth-child(4) {
-      grid-column-start: span 1; } }
+  .box_gallery .box_img_p_gallery {
+    flex-direction: column;
+    justify-content: space-around; }
+    .box_gallery .box_img_p_gallery .wrapper-orbita {
+      position: absolute;
+      right: 50%;
+      top: 65%; }
+    .box_gallery .box_img_p_gallery .img-svg {
+      width: 100%;
+      height: 60%; }
+      .box_gallery .box_img_p_gallery .img-svg:hover {
+        transform: scale(0);
+        position: static; }
+      .box_gallery .box_img_p_gallery .img-svg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .box_gallery .box_img_p_gallery .p_li_gallery {
+      width: 100%; } }

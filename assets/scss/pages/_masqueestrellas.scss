@@ -1,3 +1,12 @@
-.estrellas{
-    background-image: url(../imagenes/observando_cielo.jpg);
+
+.img-meteoritos{
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom;
+
+}
+.img_galaxias{
+    position: relative;
+    top: 0;
 }

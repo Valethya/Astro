@@ -1,5 +1,6 @@
 .section_article{
     display:grid;
+    width: 70vw;
     grid-template-columns:repeat(3, 1fr);
     grid-auto-rows:auto;
     padding:4em;
@@ -8,22 +9,33 @@
 
     .box_article{
         position: relative;
-        background-color:$delay_black;
+        // background-color:$delay_black;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding: 1em;
+        border:  solid #e6eaef05;
+        stroke-width: 0.5px;
+        a{
+            color:$bread-active;
+            padding: 0;
+            &:hover{
+                color: $bread-hover;
+            }
+        }
+
         h2{
             margin: 0.5em;
             position: absolute;
             top: 0;
         }
         article{
-            padding:1em;
+            // padding:1em;
+            margin-top: 1em;
             // border: 1px solid $delay_black;
             border-top: none; 
         }
-        
         &:nth-child(1){
             grid-column-start:span 3;
            }
@@ -56,5 +68,6 @@
         }
         
            
-    }   
+    } 
 }
+

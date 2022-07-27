@@ -137,16 +137,16 @@ footer{
                 position: relative;
                 border-radius: 50%;
                 border: 1px solid transparent;
-                animation: orbita 3s linear infinite;
+                animation: orbita 5s linear infinite;
                 transition: 1s;
                 .fa-brands:before{
-                    animation: contra-orbita 3s linear infinite;
+                    animation: contra-orbita 5s linear infinite;
                 }
                 
                 &:hover{
                 border-radius: 50%;
                 border: 1px solid $bread;
-                animation: orbita 3s linear infinite;
+                animation: orbita 5s linear infinite;
               
                     &::before{
                         content: "";

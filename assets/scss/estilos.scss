@@ -85,7 +85,7 @@ a:hover{
 
 // medias queries
 
-@media  screen and (max-width: 767.98px) {
+@media  screen and (max-width:  991.98px) {
     html{
         font-size: 50%;
     }
@@ -230,6 +230,7 @@ a:hover{
                 position: absolute;
                 right: 50%;
                 top: 65%;
+                transform: translate(35%, -50px);
             }
             .img-svg{
                 width: 100%;
@@ -256,6 +257,7 @@ a:hover{
 
     .section_article{
         display:flex;  
+        width: 100%;
     }
 /* galeria */
     .box_gallery{
@@ -266,6 +268,7 @@ a:hover{
                 position: absolute;
                 right: 50%;
                 top: 65%;
+                transform: translate(35%, -50px);
             }
                 .img-svg{
                     width: 100%;

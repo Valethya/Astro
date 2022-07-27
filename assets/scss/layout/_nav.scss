@@ -3,6 +3,7 @@ nav{
     top: 0;
     width: 100%;
     min-height: 8vh;
+    max-height: 12vh;
     background-color:#0a0a0a;
     .logo{
         margin-left: 1rem;
@@ -16,6 +17,6 @@ nav{
 }
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,.5);
-    border-color: transparent !important;
+    border-color: transparent;
     font-size: 2rem;
 }

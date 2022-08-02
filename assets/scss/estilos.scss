@@ -66,6 +66,7 @@ a:hover{
 }
 :focus-visible{
     outline: none;
+    color:rgba(211, 178, 246, 0.991);
 }
 .img_inicio{
     height: 75vh;
@@ -106,7 +107,9 @@ a:hover{
     margin: 0em 4em 4em;
     margin-top: 2em;
 }
-
+.main{
+ padding-bottom: 10vh;
+}
 
 // medias queries
 @media screen and (min-width: 1400px) {
@@ -121,6 +124,7 @@ a:hover{
     #main-articulos{
         .section_article{
             width: 100%;
+            padding-right: 7em;
         }
     }
     .citas{
@@ -238,9 +242,15 @@ a:hover{
 }
 
 @media screen and (max-width:575px) {
-    nav{
+    .nav{
         ul{
             align-items: flex-end;
+        }
+        .logo{
+            height: 7em;
+        }
+        .navbar-toggler{
+            font-size: 3rem;
         }
     }
    
@@ -249,6 +259,7 @@ a:hover{
         .section_article{
             display:flex;  
             width: 100%;
+            padding-right: 7em;
         }
         .citas{
             display: none;

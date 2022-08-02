@@ -10,9 +10,7 @@ html{
     font-size: 100%;/*16px*/
 }
 
-main{
-    margin-top: calc(10px + 4em);
-}
+
 
 body {
     background: #0a0a0a ;
@@ -20,6 +18,7 @@ body {
     font-weight: 400;
     line-height: 1.75;
     color: #fff;
+    position: relative;
 }
   
 p {margin-bottom: 0.5em;}
@@ -44,6 +43,8 @@ h4 {font-size: 1.777rem;}
 
 h5 {font-size: 1.333rem;}
 
+cite{font-style: italic;}
+
 li{
 display: inline-block;
 list-style: none;
@@ -67,10 +68,34 @@ a:hover{
     outline: none;
 }
 .img_inicio{
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+.inicio {
+    position:fixed;
+    z-index: 1 ;
+    width: 36px ;
+    height: 36px ;
+    margin: 0.5em;
+    border-radius: 50% ;
+    background: rgba(43, 66, 100, 0.482);
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+        fill: none ;
+    }
+    path, polyline{
+        stroke: #9098a9 ;
+        stroke-width: 2 ;
+        stroke-linejoin: round ;
+        stroke-linecap: round ;
+    }
+  
 }
 
 
@@ -84,33 +109,59 @@ a:hover{
 
 
 // medias queries
+@media screen and (min-width: 1400px) {
+    #main-articulos{
+        .section_article{
+            width: 70%;
+        }
+    }
+   
+}
+@media screen and (max-width: 1199.98px){
+    #main-articulos{
+        .section_article{
+            width: 100%;
+        }
+    }
+    .citas{
+        display: none;
+    }
+    }
+    
 
 @media  screen and (max-width:  991.98px) {
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
     p{
       font-size: 16px;
     }
+    #main-articulos{
+        .section_article{
+            width: 70%;
+            display:grid;
+            grid-template-columns:repeat(2, 1fr);
+            .box_article:nth-child(1){
+                grid-column-start:span 2;
+               }
+            .box_article:nth-child(6){
+                grid-column-end: span 2;
+               }
+        }    
+        .citas{
+            display:block;
+        }
+    }
     
-    .section_article{
-        display:grid;
-        grid-template-columns:repeat(2, 1fr);
-        .box_article:nth-child(1){
-            grid-column-start:span 2;
-           }
-        .box_article:nth-child(6){
-            grid-column-end: span 2;
-           }
-       }     
  
     /* footer */
-    footer{
+    .contacto{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         background-position: bottom;
         background-size: auto;
+        top:4vh;
     
         #title_contact{
             margin-left: 0;
@@ -151,70 +202,7 @@ a:hover{
     }
      
     }
-    /* second_section */
-
-    .img_second_section{
-        width: 100vw;
-        height:100vh;
-    } 
-
-    /* third_section */
-    .img_third_section{
-        width: 100vw; 
-        transform: translate(0);
-        object-position: 35%;
-    }
-
-    .img_third_section_2{
-        left: 70%;   
-    }
-
-    /* fourth section */
-    .img_fourth_section{
-        width:100% ;
-        transform: translate(0);
-    }
-
-    .img_fourth_section_2{
-        width:30% ;
-        left: 10%;
-        top: 65%;
-    }
-
-    .title_p_fourth_section{
-        z-index: 1;
-    }
-    /* fifth section */
-    #fifth_section{
-        flex-direction: column;
-        justify-content: space-evenly;
-        .title_fifth_section{
-            background-color: rgba(255, 255, 255, 0.05);
-            width: 80%;
-            margin: 80px 1em 4em;
-            position: relative;
-        }
-        
-        .box_img_fifth_section{
-            width: 100%;
-            height: 15vh;
-            margin-top: 0px;
-            .p_img_fifth_section{
-                width: 100%;
-                height: 100%;
-                position: absolute;  
-                background: rgba(0, 0, 0,0.2);
-                padding: 1em;
-                text-align: center;
-            }
-            .img_fifth_section{
-                height: 100%;      
-            }    
-        }
-    }
-
-
-
+   
     /* estilos de como observar el cielo */
     .img_brujula{
         width: 60%;
@@ -225,12 +213,9 @@ a:hover{
         .box_img_p_gallery{
         flex-direction:column;
         justify-content: space-around;
-        height: calc(100vh - 10em);
+        height: 100vh;
             .wrapper-orbita{
-                position: absolute;
-                right: 50%;
-                top: 65%;
-                transform: translate(35%, -50px);
+                position: static;
             }
             .img-svg{
                 width: 100%;
@@ -253,22 +238,31 @@ a:hover{
 }
 
 @media screen and (max-width:575px) {
-   
-
-    .section_article{
-        display:flex;  
-        width: 100%;
+    nav{
+        ul{
+            align-items: flex-end;
+        }
     }
+   
+    #main-articulos{
+        flex-direction: column;
+        .section_article{
+            display:flex;  
+            width: 100%;
+        }
+        .citas{
+            display: none;
+        }
+    }
+   
 /* galeria */
     .box_gallery{
         .box_img_p_gallery{
             flex-direction:column;
             justify-content: space-around;
+            height: 100vh;
             .wrapper-orbita{
-                position: absolute;
-                right: 50%;
-                top: 65%;
-                transform: translate(35%, -50px);
+                position: static;
             }
                 .img-svg{
                     width: 100%;

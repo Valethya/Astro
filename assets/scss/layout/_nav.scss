@@ -1,10 +1,12 @@
-nav{
+.nav{
+    position: absolute;
     float: right;
     top: 0;
     width: 100%;
     min-height: 8vh;
     max-height: 12vh;
-    background-color:#0a0a0a;
+    background-color: #0a0a0a33;
+    animation: opaco 1s forwards;
     .logo{
         margin-left: 1rem;
         margin-top: -1rem;
@@ -12,7 +14,7 @@ nav{
         width: auto;
     }
     #navbarColor01{
-        background-color: #0a0a0a;
+        background-color:#0a0a0a49;
     }
 }
 .navbar-dark .navbar-toggler {
@@ -20,3 +22,12 @@ nav{
     border-color: transparent;
     font-size: 2rem;
 }
+.nav-index{
+    position: fixed;
+     background-color: #0a0a0a33;
+     #navbarColor01{
+        background-color: #0a0a0a49;
+    }
+}
+
+

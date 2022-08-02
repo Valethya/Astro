@@ -1,183 +1,67 @@
 
-footer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(3, 1fr);
-    align-items: center;
-    height:calc(100vh - 1em);
-    overflow: hidden;
-    background-image: url(../imagenes/astronaut_transparent.png);
-    background-size: cover;
-    background-position: center;
-    grid-template-areas:
-        "title form" 
-        "texto form"
-        "texto form" ;
-    
-    form{
-        width: 70%; 
-        margin-left: 5rem;
-        margin-top: 5em;
-        grid-area: form;
-        label{
-            display:inline;
-            margin-left:0.5em ;
-            transition: 1s;
-            color: transparent;
-            font-weight: bold;
-            &:focus-within{
-                color:#fff;
-            }
-            &:hover{
-                color:#fff;
-            }
-            input{
-                width: 100%;
-                margin: 0.5em;
-                padding: 0.5em;
-                height: 2em;
-                background-color: rgba(255, 255, 255, 0.13);
-                border: 0;
-                border-bottom: 2px solid #fff;
-                outline: none;
-                color: #fff;
-                &:focus{
-                    box-shadow:#939393 0px 0px 30px;
-                }
-                &:focus::placeholder{
-                    color:transparent;
-                }
-            }
-            input::placeholder{
-                color: #fff;
-                transition: 1s;
-            }  
-            input:hover::placeholder {
-                color:transparent;
-              }
-            textarea{
-                width: 100%;
-                margin: 0.5em;
-                padding: 0.5em;
-                background-color: rgba(255, 255, 255, 0.13);
-                resize: none; 
-                border: 0;
-                border-bottom: 2px solid #fff;
-                outline: none;
-                &::placeholder{
-                    color: #fff;
-                    transition: 1s;
-                }
-                &:focus{
-                    box-shadow:#939393 0px 0px 30px;
-                }
-                &:focus::placeholder{
-                    color:transparent;
-                }
-            }
-            textarea:hover::placeholder {
-                color:transparent;
-            }
-        }
-        #submite{
-            margin: 0.5em;
-            padding: 0.5em;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.502);
-            border: 0;
-            border-bottom: 2px solid #fff;
-            color: #fff;   
-            font-weight: 900;  
-            transition: 1s;
-            &:focus{
-                box-shadow:#939393 0px 0px 30px;
-                transition: 1s;
-            }
-            &:focus::placeholder{
-                color:#fff;
-            }
-            &:hover{
-                background-color: rgba(255, 255, 255, 1);
-                color: #000; 
-                transition: 1s;
-            }
-        }
-    }
-    #title_contact{
-        margin-left: 5rem;
-        margin-top: 4rem;
-
-    }
-
-    .title_p_contact{
+.footer{
+   height: 10vh;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   background-color: rgba(43, 66, 100, 0.482);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   #ul_social_medias{
+        width: 30%;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         justify-content: flex-start;
-        height: 80%;
-        width: 70%;
-        margin-left: 5em;
-        grid-area: texto;
-        .h3_contact{
-            font-family: 'bebas neue', cursive;
-            grid-area: title;
-        }
-        #ul_social_medias{
-            width: 30%;
+        align-items: center;
+        margin: 0;
+        li{
+            padding: 0.5em;
+            margin: 0.5em;
+            height: 2em;
+            width: 2em;
             display: flex;
-            margin-top: 2rem;
-            li{
-                padding: 0.5em;
-                margin: 1em;
-                height: 70px;
-                width: 70px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            animation: orbita 5s linear infinite;
+            transition: 1s;
+            .fa-brands:before{
+                animation: contra-orbita 5s linear infinite;
+            }
+            
+            &:hover{
+            border-radius: 50%;
+            border: 1px solid white;
+            animation: orbita 5s linear infinite;
+        
+                &::before{
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -4px;
+                    background-color: white;  
+                }
+            }
+            .fa-brands{
+                height: 1em;
+                width: 1em;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                position: relative;
-                border-radius: 50%;
-                border: 1px solid transparent;
-                animation: orbita 5s linear infinite;
-                transition: 1s;
-                .fa-brands:before{
-                    animation: contra-orbita 5s linear infinite;
-                }
-                
-                &:hover{
-                border-radius: 50%;
-                border: 1px solid $bread;
-                animation: orbita 5s linear infinite;
-              
-                    &::before{
-                        content: "";
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: -5px;
-                        background-color: $bread-hover;  
-                    }
-                }
-                .fa-brands{
-                    height: 70px;
-                    width: 70px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            
             }
-            @keyframes orbita {
-                to{transform: rotate(0deg);}
-                from{transform: rotate(360deg);}    
-            }
-            @keyframes contra-orbita {
-                to{transform: rotate(-0deg);}
-                from{transform: rotate(-360deg);}    
-            }
-            
-        } 
-            
+        
+        }
     }
-       
+    p{
+        margin-right: 3.5em;
+        font-size: 12px;
+    }
 }
+.index-footer{
+    background-color: rgba(64, 43, 100, 0.413);
+}
+   

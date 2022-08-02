@@ -23,10 +23,10 @@
     new WOW().init();
     </script>
 </head>
-<body>
+<body id="inicio">
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+        <nav class="nav navbar navbar-expand-md navbar-dark nav-black fixed-top">
             <a class="navbar-brand float-right" href="../index.html"><img class="logo" src="../assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,13 +46,13 @@
                     <a class="nav-link" href="./galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link"  href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main id="historias_universo">
+    <main id="main-articulos">
         <div class="back">
             <a href="../index.html" class="btn-back">
                 <div>
@@ -227,39 +227,27 @@
                 </ul>
             </div>
         </section>
+        <div class="citas">
+            <cite>"Yo, un universo de átomos, un átomo en el universo."</cite>
+            <p>-Richard P. Feynman-</p>
+        </div>
+        <div class="inicio">
+            <a href="#inicio">
+                <svg width="16px" height="14px" viewBox="0 0 16 14" transform="rotate(90)">
+                    <path d="M1,7 L15,7"></path>
+                    <polyline points="7 1 1 7 7 13"></polyline>
+                </svg>
+            </a>
+        </div>
     </main>
 
-    <footer id="contacto">  
-        <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
-       
-        <!-- formulario para hacer participe al usuario -->
-        <form action="" method="post">
-            <label for="name">Nombre
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
-            </label>                
-                <label for="email">E-mail
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
-            </label>               
-                <label for="asunto">Asunto
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">Cuentanos
-                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
-            </label>                
-            <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
-        </form>
-        <div class="title_p_contact">       
-            <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                Te invitamos a que nos cuentes tu experiencia con las estrellas y de como podemos nosotros mejorarla.
-            </h3>
-            <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
-                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-2x fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></a></li>   
-            </ul>
-        </div>
-    
+    <footer class="footer"> 
+        <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>   
+        </ul>
+        <p>© 2022 Copyright: Astro</p>
     </footer>
-
 </body>
 

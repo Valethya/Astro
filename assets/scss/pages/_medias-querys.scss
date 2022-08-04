@@ -93,7 +93,8 @@
             align-items: flex-end;
         }
         .logo{
-            height: 7em;
+            // height: 7em;
+            font-size: 2rem;
         }
         .navbar-toggler{
             font-size: 3rem;
@@ -101,7 +102,7 @@
     }
     .back{
        left: 3em;
-       top: 12em;
+       top: 10vh;
         a{
             div{
                 background: #e8eaed42;

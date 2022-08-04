@@ -30,7 +30,7 @@
             height: 12px ;
             border-radius: 50% ;
             background: $bread-back ;
-            transform: scale(0.9); 
+            @include transform(scale(0.9));
             transition: all 0.2s ease ;
         }
         &:not(:last-child)::before {
@@ -57,7 +57,7 @@
             color:$bread; 
             display: inline-block; 
             opacity: 0; 
-            transform: translateY(-10px) ;
+            @include transform(translateY(-10px));
             transition: all 0.2s ease ;
             padding: 0;
             &:hover{ 
@@ -71,7 +71,7 @@
     backdrop-filter: blur(1px);
     .menu-back{
         opacity: 1 ;
-        transform: translateY(0) ;
+        @include transform(translateY(0));
         padding: 0em 3em 2em 2em;
     }
     .btn-back {
@@ -79,20 +79,20 @@
             background: rgba(65,138,216,0.25) ;
         }
         span {
-            transform: translateX(0) ;
+            @include transform(translateX(0));
             opacity: 1 
         }
     }
     ul {
         opacity: 1;
         &.nav-history {
-            transform: translateY(0) ;
+            @include transform(translateY(0));
             pointer-events: auto; 
             li {
                 margin-bottom: 8px; 
                 &::after{ 
                     background: $bread-back; 
-                    transform: translateY(6px) ;
+                    @include transform(translateY(6px));
                 }
                 &.active{
                     &::after {
@@ -102,7 +102,7 @@
                 
                 a {
                     opacity: 1 ;
-                    transform: translateY(0) ;
+                    @include transform(translateY(0));
                 }
             }
         }
@@ -136,7 +136,7 @@
 		margin-left: 10px ;
 		line-height: 34px ;
 		opacity: 0 ;
-		transform: translateX(-20px) ;
+        @include transform(translatex(-20));
 		transition: all 0.2s ease ;
         font-size: 20px;
         font-weight: bold;

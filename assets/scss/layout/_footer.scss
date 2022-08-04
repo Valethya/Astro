@@ -30,7 +30,9 @@
             .fa-brands:before{
                 animation: contra-orbita 5s linear infinite;
             }
-            
+            &:hover .fa-brands{
+                color:rgba(181, 130, 236, 0.991);
+            }
             &:hover{
             border-radius: 50%;
             border: 1px solid white;
@@ -43,7 +45,7 @@
                     border-radius: 50%;
                     position: absolute;
                     top: -4px;
-                    background-color: white;  
+                    background-color: rgba(130, 236, 190, 0.991);  
                 }
             }
             .fa-brands{
@@ -57,7 +59,7 @@
         }
     }
     p{
-        margin-right: 5em;
+        margin-right: 6em;
         font-size: 12px;
     }
 }

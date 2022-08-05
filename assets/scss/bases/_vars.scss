@@ -3,18 +3,16 @@ $delay-black:rgba(255, 254, 254, 0.105);
 $turquesa: #23d5ab;
 $fucsia: #e73c7e;
 
-
+// colores fondos transparentes
 $nav-delay:#0a0a0a54;
 $astro-delay:#0a0a0a86;
 $delay-astro:#ebe5e514;
 
-// variables bread
-$bread:#023872;
-$bread-hover:#077af6;
-$bread-active:#8ac0fa;
-$bread-back:#e6eaef;
-$bread-back-hover: #aedfff ;
-$bread-back-active:#077af6;
+// colores generales
+$bread-hover:rgb(130, 208, 236);
+$bread-active:#FF8300;
+$bread:#e6eaef;
+
 
 // breakpoints
 // X-Small devices (portrait phones, less than 576px)

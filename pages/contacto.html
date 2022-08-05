@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap">
-        <title>Como observar el cielo</title>
+        <title>Conectemonos</title>
         <link rel="shortcut icon" href="../assets/imagenes/astronegro.ico" type="image/x-icon">
         <link rel="stylesheet" href="../assets/css/animate.css">
         <link rel="stylesheet" href="../assets/css/animate.css">
@@ -25,9 +25,9 @@
             new WOW().init();
         </script>
     </head>
-<body>
+<body id="inicio" class="main">
     <header>
-        <nav class="nav navbar navbar-expand-md navbar-dark fixed-top wow animate__fadeIn" data-wow-duration="10s">
+        <nav class="nav navbar navbar-expand-md navbar-dark fixed-top">
             <a class="navbar-brand float-right" href="../index.html"><img class="logo" src="../assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,38 +47,70 @@
                     <a class="nav-link" href="./galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./contacto.html">Contactemonos<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main id="contacto-main">  
-        <div class="contacto">
-            <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
-       
+        <div class="back">
+            <a href="../index.html" class="btn-back">
+                <div>
+                    <svg width="16px" height="14px" viewBox="0 0 16 14">
+                        <path d="M1,7 L15,7"></path>
+                        <polyline points="7 1 1 7 7 13"></polyline>
+                    </svg>
+                </div>
+                <span>Back</span>
+            </a>
+            <div class="menu-back">
+                <ul class="nav-history">
+                <li class="active"><a href="contacto.html">Contactemonos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <img class="img_inicio img_contacto" src="../assets/imagenes/pequeña-estacion.jpg" alt="hombre observando el cielo nocturno">
+        <div class="introduction">
+            <h1>Conectemonos</h1>
+            <p>
+              
+
+            </p>
+        </div>  
             <!-- formulario para hacer participe al usuario -->
             <form action="./gracias.html" method="post">
                 <label for="name">Nombre
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
+                    <input  autocomplete="off"type="text" id="name" placeholder="Nombre" required>
                 </label>                
                     <label for="email">E-mail
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
+                    <input  autocomplete="off" type="email" id="email" placeholder="Email" required>
                 </label>               
                     <label for="asunto">Asunto
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
+                    <input  autocomplete="off" type="text" id="asunto" placeholder="Asunto" required>
                 </label>                
                     <label for="cuentanos">Cuentanos
-                    <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
+                    <textarea id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
                 </label>                
-                <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
+                <button id="submite" type="submit" name="enviar" >Enviar</button>   
             </form>
-            <div class="title_p_contact">       
-                <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                    Te invitamos a que nos cuentes tu experiencia con las estrellas y de como podemos nosotros mejorarla.
-                </h3>
+            <div class="texto">
+                <p>
+                    para nosotros es súper importante mantener un contacto contigo, queremos saber qué es lo que te gustaría aprender o que tipo de actividades te gustaría que se pudieran realizar en Astro, nuestra misión no solo es poder enseñarte mas sobre las estrellas, sino también que puedas hacer cosas que te gustan mientras lo haces, es por esto que contamos con esta sección, donde siempre tendrás a disposición los mensajes para hacernos saber tus ideas u opiniones, pero también es aquí donde podrás encontrar otro tipo de interacciones.
+                </p>
             </div>
-        </div>
+            <div class="inicio">
+                <a href="#inicio" class="btn-inicio">
+                    <div>
+                        <svg width="16px" height="14px" viewBox="0 0 16 14" transform="rotate(90)">
+                            <path d="M1,7 L15,7"></path>
+                            <polyline points="7 1 1 7 7 13"></polyline>
+                        </svg>
+                    </div>
+                    <span>Subir</span>
+                </a>
+            </div>
     </main>
     <footer class="footer"> 
         <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   

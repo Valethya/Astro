@@ -3,154 +3,151 @@
 	top: 13vh; 
 	left: 40px; 
 	width: 100px; 
-    ul{
-        display: flex; 
-        flex-direction: column;
-		margin-bottom: 0; 
-		list-style: none; 
-        opacity: 0;
-        li{ 
-			white-space: nowrap; 
-			a {
-				text-decoration: none; 
-            }
-        }
-        &.nav-history{ 
-			padding-left: 36px; 
-			padding-top: 25px; 
-			pointer-events: none; 
-        }
-        li{ 
-            margin-bottom: 5px; 
-            &::after{ 
-                content: ''; 
-                position: absolute; 
-                left: 12px; 
-                width: 12px;
-                height: 12px ;
-                border-radius: 50% ;
-                background: $bread-back ;
-                @include transform(scale(0.9));
-                transition: all 0.2s ease ;
-            }
-            &:not(:last-child)::before {
-                content: ''; 
-                position: absolute ;
-                left: 17px ;
-                margin-top: 10px ;
-                width: 2px ;
-                height: 35px ;
-                background: $bread-back ;
-                transition: all 0.2s ease ;
-            }
-            &.active {
-                pointer-events: none ;
-                &::after {
-                    background: #e8eaed ;
-                }
-                a {
-                    color: $bread-active ;
-                    font-weight: bold;
+    .btn-back {
+        display: inline-block ;
+        div {
+            position: absolute ;
+            z-index: 1 ;
+            width: 36px ;
+            height: 36px ;
+            border-radius: 50% ;
+            background: $bread ;
+            float: left ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                fill: none ;
+                path, polyline{
+                    stroke: $bread-active;
+                    stroke-width: 2 ;
+                    stroke-linejoin: round ;
+                    stroke-linecap: round ;
                 }
             }
-            a {
-                color:$bread; 
-                display: inline-block; 
-                opacity: 0; 
-                @include transform(translateY(-10px));
-                transition: all 0.2s ease ;
-                padding: 0;
-                &:hover{ 
-                    color: $bread-hover;
+        }
+        span {
+            display: inline-block ;
+            color: $bread ;
+            margin-left: 10px ;
+            line-height: 34px ;
+            opacity: 0 ;
+            transition: all 0.2s ease ;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        &:hover {
+            span {
+                color: $bread-hover ;
+            }
+        }
+        &:hover{
+            svg{
+                path, polyline{
+                    stroke: $bread-hover;
                 }
             }
         }
     }
+    .menu-back{
+        opacity: 0;
+        transition: 1s;
+        ul{
+            display: flex; 
+            flex-direction: column;
+            padding-left: 36px; 
+            padding-top: 25px; 
+            pointer-events: none; 
+            margin-bottom: 0; 
+            list-style: none; 
+            li{ 
+                white-space: nowrap;
+                margin-bottom: 5px;  
+                a {
+                    text-decoration: none; 
+                    color:$bread; 
+                    display: inline-block; 
+                    @include transform(translateY(-10px));
+                    transition: all 0.2s ease ;
+                    padding: 0;
+                    &:hover{ 
+                        color: $bread-hover;
+                    }
+                }
+                &::after{ 
+                    content: ''; 
+                    position: absolute; 
+                    left: 12px; 
+                    width: 12px;
+                    height: 12px ;
+                    border-radius: 50% ;
+                    background: $bread ;
+                    // background:rgba(236, 186, 130, 0.991);
+                    @include transform(scale(0.9));
+                    transition: all 0.2s ease ;
+                }
+                &:not(:last-child)::before {
+                    content: ''; 
+                    position: absolute ;
+                    left: 17px ;
+                    margin-top: 10px ;
+                    width: 2px ;
+                    height: 35px ;
+                    background: $bread;
+                    transition: all 0.2s ease ;
+                }
+                &.active {
+                    pointer-events: none ;
+                    &::after {
+                        background:$bread-active;
+                    }
+                    a {
+                        color:$bread-active;
+                        font-weight: bold;
+                    }
+                }    
+            }
+        }
+    }
+ 
+    
     &:hover {
         width: auto ;
         backdrop-filter: blur(1px);
         .menu-back{
-            opacity: 1 ;
+            opacity: 1;
             @include transform(translateY(0));
-            padding: 0em 3em 2em 2em;
         }
         .btn-back {
-            div {
-                background: rgba(65,138,216,0.25) ;
-            }
             span {
-                @include transform(translateX(0));
+                @include transform(translateX(30px));
                 opacity: 1 
             }
         }
-        ul {
+        .menu-back{
             opacity: 1;
-            &.nav-history {
-                @include transform(translateY(0));
-                pointer-events: auto; 
-                li {
-                    margin-bottom: 8px; 
-                    &::after{ 
-                        background: $bread-back; 
-                        @include transform(translateY(6px));
-                    }
-                    &.active{
-                        &::after {
-                            background: $bread-back-active ;
+            ul {
+                &.nav-history {
+                    @include transform(translateY(0));
+                    pointer-events: auto; 
+                    li {
+                        margin-bottom: 8px; 
+                        &::after{ 
+                            @include transform(translateY(6px));
                         }
-                    }
-                    
-                    a {
-                        opacity: 1 ;
-                        @include transform(translateY(0));
+                        a {
+                            @include transform(translateY(0));
+                        }
                     }
                 }
             }
-        }
+        }    
     }
 }                
-.back:hover .btn-back div svg path,
-.back:hover .btn-back div svg polyline{ 
-	stroke: #418ad8 ;
-}
-.btn-back {
-	display: inline-block ;
-	div {
-		position: relative ;
-		z-index: 1 ;
-		width: 36px ;
-		height: 36px ;
-		border-radius: 50% ;
-		background: #e8eaed ;
-		float: left ;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-		svg {
-			fill: none ;
-        }
-    }
-    span {
-		display: inline-block ;
-		color: $bread ;
-		margin-left: 10px ;
-		line-height: 34px ;
-		opacity: 0 ;
-        @include transform(translatex(-20));
-		transition: all 0.2s ease ;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    &:hover {
-		span {
-			color: $bread-hover ;
-        }
-    }
-}
-.btn-back div svg path,
-.btn-back div svg polyline {
-	stroke: #9098a9 ;
-	stroke-width: 2 ;
-	stroke-linejoin: round ;
-	stroke-linecap: round ;
-}
+
+
+
+
+
+
+// arreglar breadcrumb, tiene varias cosas repetidas o propiedades declaradas de forma inecesaria.....

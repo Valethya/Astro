@@ -59,6 +59,9 @@ a:hover{
     color: #fff;
 }
 p{
+    &::first-letter{
+        text-transform: capitalize;
+        }
     a{
         font-style: italic;
     }
@@ -80,26 +83,48 @@ p{
 .inicio {
     position:fixed;
     z-index: 1 ;
-    width: 36px ;
-    height: 36px ;
-    margin: 2vh;
-    border-radius: 50% ;
-    background: rgba(43, 66, 100, 0.482);
+    width: 36px;
+    height: 36px;
     right: 0;
     bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg {
-        fill: none ;
+    margin: 2vh;
+    .btn-inicio{
+        width: 36px ;
+        height: 36px ;
+        border-radius: 50% ;
+        background: $bread;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            fill: none ;
+        }
+        path, polyline{
+            stroke: $bread-active ;
+            stroke-width: 2 ;
+            stroke-linejoin: round ;
+            stroke-linecap: round ;
+           
+        } 
     }
-    path, polyline{
-        stroke: #9098a9 ;
-        stroke-width: 2 ;
-        stroke-linejoin: round ;
-        stroke-linecap: round ;
+    span{
+        position: absolute;
+        opacity: 0;
+        font-weight: bold;
+        transition: 1s;
     }
-  
+    
+    &:hover{
+        svg{
+            path, polyline{
+                stroke: $bread-hover;
+            }
+        }
+        span{
+            opacity: 1;
+            @include transform(translatey(-35px))
+        }
+    }
 }
 .main{
     padding-bottom: 10vh;
@@ -109,5 +134,6 @@ p{
     margin: 0em 4em 4em;
     margin-top: 2em;
     font-weight: bold;
+    width: 90%;
 }
 

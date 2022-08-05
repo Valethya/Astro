@@ -30,43 +30,6 @@
             font-size: 12px;
         }
     }
- 
-    /* footer */
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        background-position: bottom;
-        background-size: auto;
-        top:4vh;
-    
-        #title_contact{
-            margin-left: 0;
-        }
-        .title_p_contact{
-            align-items: center;
-            height: 40%;
-            width: 50%;
-            margin-left:0;
-            .h3_contact{
-                text-align: center;
-            }
-            #ul_social_medias{
-                width: 100%;
-                justify-content: center;
-            } 
-        }
-        form{
-            width: 80%; 
-            margin-right: 0;
-            margin-top: 4em;
-            margin-bottom: 4em;
-            margin-left: 0;
-        }    
-    }
-    
-    /* estilos de las secciones del index */
-
     section{
     height:auto;  
     .box_title_p{
@@ -85,6 +48,14 @@
         width: 60%;
         float: right;  
     }
+}
+@media  screen and (max-width:  991.98px){
+    #contacto-main{
+        .contacto{
+            display: flex;
+        }
+    }
+    
 }
 
 @media screen and (max-width:575px) {
@@ -187,6 +158,16 @@
                 width: 100%;
                 padding: 4em;
             }
+        }
+    }
+    #contacto-main{
+        display: flex;
+        flex-direction: column;
+        form{
+            width: 90%;
+        }
+        .texto{
+            width: 90%;   
         }
     }
 }

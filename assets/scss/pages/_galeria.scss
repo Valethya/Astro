@@ -56,6 +56,9 @@
             transition: 2s;
             .fa-heart{
                 color: crimson;
+                &:hover{
+                    cursor:pointer;
+                }
             }
         }
         .img-svg{

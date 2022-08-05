@@ -45,7 +45,7 @@
                     border-radius: 50%;
                     position: absolute;
                     top: -4px;
-                    background-color: rgba(130, 236, 190, 0.991);  
+                    background-color: $bread-active;  
                 }
             }
             .fa-brands{
@@ -63,6 +63,7 @@
         font-size: 12px;
     }
 }
+
 .index-footer{
     background-color: rgba(64, 43, 100, 0.413);
     #ul_social_medias{
@@ -89,3 +90,16 @@
         }
     }
 }  
+
+
+@keyframes orbita {
+    to {
+      transform: rotate(0deg); }
+    from {
+      transform: rotate(360deg); } }
+  
+  @keyframes contra-orbita {
+    to {
+      transform: rotate(0deg); }
+    from {
+      transform: rotate(-360deg); } }

@@ -10,6 +10,7 @@
     form{
         width: 40%; 
         padding: 4em;
+        font-size: 16px;
         label{
             display:inline;
             margin-left:0.5em ;
@@ -77,6 +78,16 @@
                 transition: 2s;
                 letter-spacing: 1em;
             }
+        }
+    }
+    .anuncio{
+        width: 40%;
+        padding: 2em;
+        margin: 4em;
+        border: 3px solid $border;
+        h2{
+            background: $bread-hover;
+            padding: 1em;
         }
     }
 }

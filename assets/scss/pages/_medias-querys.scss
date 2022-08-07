@@ -107,36 +107,41 @@
         width: 100%;
         #observar{
             width: 90%;
-            .img_brujula{
-                width: 40%;
-                float: right;  
-            }
-            img{
+            
+            figure{
                 width: 100%;
-            }
-        }
-        .box_article{
-            width: calc(90% - 8em);
-            margin: 4em;
-            article{
                 img{
                     width: 100%;
-                    object-fit: cover;
-                    object-position: bottom;
-                }
-                a{
-                    width: 100%;
-                    padding: 0;
                 }
             }
-            .fa-heart{
-                color:crimson
-            }
-            &:hover{
-                @include transform(scale(1.01));
-                box-shadow: 1px 1px 15px #6a6d7014;
+            
+        }
+        .articulos-sugeridos{
+            width: 90%;
+            .box_article{
+                width: 90%;
+                margin: 1em;
+                article{
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: bottom;
+                    }
+                    a{
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+                .fa-heart{
+                    color:crimson
+                }
+                &:hover{
+                    @include transform(scale(1.01));
+                    box-shadow: 1px 1px 15px #6a6d7014;
+                }
             }
         }
+        
     }
    
     /* galeria */
@@ -172,6 +177,9 @@
         }
         .texto{
             width: 90%;   
+        }
+        .anuncio{
+            width: 75%;
         }
     }
 }

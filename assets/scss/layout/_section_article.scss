@@ -4,7 +4,7 @@
     .citas{
         width: 25%;
         height: fit-content;
-        border-left: 1px solid  #e6eaef23;
+        border-left: 1px solid $border;
         padding: 2em;
         font-weight: bold;
         margin-top: 4em;
@@ -29,7 +29,7 @@
             flex-direction: column;
             justify-content: space-around;
             padding: 1em;
-            border:  solid #e6eaef05;
+            border:  solid $border;
             stroke-width: 0.5px;
             transition: 1s;
             .img-article{
@@ -52,9 +52,7 @@
                 top: 0;
             }
             article{
-                // padding:1em;
                 margin-top: 1em;
-                // border: 1px solid $delay_black;
                 border-top: none; 
             }
             &:nth-child(1){
@@ -65,7 +63,7 @@
             }
             &:hover{
                 @include transform(scale(1.01));
-                box-shadow: 1px 1px 15px #6a6d7014;
+                box-shadow: 1px 1px 15px $border;
             }
             
             &:hover .fa-heart{

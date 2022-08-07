@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 8vh;
     max-height: 12vh;
-    background-color: #0a0a0a33;
+    background-color: $nav-delay;
     animation: opaco 1s forwards;
     .logo{
         margin-left: 1rem;
@@ -14,7 +14,7 @@
         width: auto;
     }
     #navbarColor01{
-        background-color:#0a0a0a49;
+        background-color:$nav-strong;
     }
 }
 .nav .navbar-toggler {
@@ -26,10 +26,6 @@
 
 .nav-index{
     position: fixed;
-     background-color: #0a0a0a33;
-     #navbarColor01{
-        background-color: #0a0a0a49;
-    }   
 }
 
 

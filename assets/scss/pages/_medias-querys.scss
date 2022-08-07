@@ -13,6 +13,9 @@
     p, a{
       font-size: 16px;
     }
+    nav .logo {
+        font-size: 2rem;
+    }
     #main-articulos{
         .section_article{
             width: 70%;
@@ -33,11 +36,9 @@
     section{
     height:auto;  
     .box_title_p{
-        background-color: rgba(0, 0, 0, 0.626);
         width:40vw; 
         height: auto;
         position: absolute;
-        box-shadow: #939393 0px 0px 30px;
         animation: brillo 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
     }
      
@@ -50,6 +51,7 @@
     }
 }
 @media  screen and (max-width:  991.98px){
+
     #contacto-main{
         .contacto{
             display: flex;
@@ -74,16 +76,6 @@
     .back{
        left: 3em;
        top: 10vh;
-        a{
-            div{
-                background: #e8eaed42;
-            path, polyline{
-                stroke:#2c333f;
-            }
-            }
-            
-        }
-        
     }
     .introduction{
         width: 80%;

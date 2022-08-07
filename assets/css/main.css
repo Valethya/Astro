@@ -35,7 +35,7 @@
       .footer #ul_social_medias li .fa-brands:before {
         animation: contra-orbita 5s linear infinite; }
       .footer #ul_social_medias li:hover .fa-brands {
-        color: rgba(130, 208, 236, 0.991); }
+        color: #82d0ec; }
       .footer #ul_social_medias li:hover {
         border-radius: 50%;
         border: 1px solid white;
@@ -73,7 +73,7 @@
       border-radius: 50%;
       position: absolute;
       top: -4px;
-      background-color: rgba(255, 255, 255, 0.991); }
+      background-color: white; }
 
 @keyframes orbita {
   to {
@@ -110,10 +110,7 @@
   font-size: 2rem; }
 
 .nav-index {
-  position: fixed;
-  background-color: #0a0a0a33; }
-  .nav-index #navbarColor01 {
-    background-color: #0a0a0a49; }
+  position: fixed; }
 
 #main-articulos {
   display: flex;
@@ -121,7 +118,7 @@
   #main-articulos .citas {
     width: 25%;
     height: fit-content;
-    border-left: 1px solid  #e6eaef23;
+    border-left: 1px solid #e6eaef1a;
     padding: 2em;
     font-weight: bold;
     margin-top: 4em; }
@@ -143,7 +140,7 @@
       flex-direction: column;
       justify-content: space-around;
       padding: 1em;
-      border: solid #e6eaef05;
+      border: solid #e6eaef1a;
       stroke-width: 0.5px;
       transition: 1s; }
       #main-articulos .section_article .box_article .img-article {
@@ -170,7 +167,7 @@
         -webkit-transform: scale(1.01);
         -ms-transform: scale(1.01);
         transform: scale(1.01);
-        box-shadow: 1px 1px 15px #6a6d7014; }
+        box-shadow: 1px 1px 15px #e6eaef1a; }
       #main-articulos .section_article .box_article:hover .fa-heart, #main-articulos .section_article .box_article:hover h2 {
         animation: fluido 2s ease-in-out infinite;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -380,7 +377,8 @@ p::first-letter {
 
 p a {
   font-style: italic;
-  color: #82d0ec; }
+  color: #82d0ec;
+  font-weight: bold; }
 
 figcaption {
   font-style: italic;
@@ -612,7 +610,7 @@ figcaption::first-letter {
       justify-content: space-around;
       padding: 1em;
       margin-top: 2em;
-      border: 3px solid #e6eaef05;
+      border: 3px solid #e6eaef1a;
       stroke-width: 0.5px;
       transition: 1s; }
       .observar .articulos-sugeridos .box_article article img {
@@ -791,6 +789,8 @@ figcaption::first-letter {
     font-size: 40%; }
   p, a {
     font-size: 16px; }
+  nav .logo {
+    font-size: 2rem; }
   #main-articulos .section_article {
     width: 70%;
     display: grid;
@@ -805,11 +805,9 @@ figcaption::first-letter {
   section {
     height: auto; }
     section .box_title_p {
-      background-color: rgba(0, 0, 0, 0.626);
       width: 40vw;
       height: auto;
       position: absolute;
-      box-shadow: #939393 0px 0px 30px;
       animation: brillo 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite; }
   /* estilos de como observar el cielo */
   .img_brujula {
@@ -830,10 +828,6 @@ figcaption::first-letter {
   .back {
     left: 3em;
     top: 10vh; }
-    .back a div {
-      background: #e8eaed42; }
-      .back a div path, .back a div polyline {
-        stroke: #2c333f; }
   .introduction {
     width: 80%; }
   #main-articulos {

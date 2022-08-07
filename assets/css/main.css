@@ -379,7 +379,18 @@ p::first-letter {
   text-transform: capitalize; }
 
 p a {
-  font-style: italic; }
+  font-style: italic;
+  color: #82d0ec; }
+
+figcaption {
+  font-style: italic;
+  font-size: small; }
+  figcaption a {
+    color: #82d0ec;
+    font-size: small; }
+
+figcaption::first-letter {
+  text-transform: capitalize; }
 
 .fa-solid {
   color: #fff;
@@ -578,11 +589,16 @@ p a {
   .observar #observar {
     padding: 2em 4em 4em 4em;
     width: 70%; }
-    .observar #observar .img_brujula {
-      width: 40%;
+    .observar #observar figure {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+      padding: 2em;
+      clear: right;
       float: right; }
-    .observar #observar img {
-      width: 100%; }
+    .observar #observar ol li {
+      list-style: upper-roman;
+      color: white; }
   .observar .box_article {
     width: 25vw;
     height: 100%;
@@ -639,10 +655,6 @@ p a {
         border-bottom: 2px solid #fff;
         outline: none;
         color: #fff; }
-        #contacto-main form label input:focus {
-          box-shadow: #939393 0px 0px 30px; }
-        #contacto-main form label input:focus::placeholder {
-          color: transparent; }
       #contacto-main form label input::placeholder {
         color: #fff;
         transition: 1s; }
@@ -660,8 +672,6 @@ p a {
         #contacto-main form label textarea::placeholder {
           color: #fff;
           transition: 1s; }
-        #contacto-main form label textarea:focus {
-          box-shadow: #939393 0px 0px 30px; }
         #contacto-main form label textarea:focus::placeholder {
           color: transparent; }
       #contacto-main form label textarea:hover::placeholder {
@@ -680,9 +690,6 @@ p a {
         color: #e6eaef;
         transition: 2s;
         letter-spacing: 1em; }
-  #contacto-main .texto {
-    width: 60%;
-    padding: 4em; }
 
 .gracias {
   position: relative;
@@ -813,6 +820,8 @@ p a {
       background: #e8eaed42; }
       .back a div path, .back a div polyline {
         stroke: #2c333f; }
+  .introduction {
+    width: 80%; }
   #main-articulos {
     flex-direction: column; }
     #main-articulos .section_article {
@@ -872,6 +881,7 @@ p a {
     display: flex;
     flex-direction: column; }
     #contacto-main form {
-      width: 90%; }
+      width: 90%;
+      font-size: 12px; }
     #contacto-main .texto {
       width: 90%; } }

@@ -85,6 +85,9 @@
         }
         
     }
+    .introduction{
+        width: 80%;
+    }
    
     #main-articulos{
         flex-direction: column;
@@ -165,6 +168,7 @@
         flex-direction: column;
         form{
             width: 90%;
+            font-size: 12px;
         }
         .texto{
             width: 90%;   

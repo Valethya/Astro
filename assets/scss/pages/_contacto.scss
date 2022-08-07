@@ -32,12 +32,6 @@
                 border-bottom: 2px solid #fff;
                 outline: none;
                 color: #fff;
-                &:focus{
-                    box-shadow:#939393 0px 0px 30px;
-                }
-                &:focus::placeholder{
-                    color:transparent;
-                }
             }
             input::placeholder{
                 color: #fff;
@@ -58,9 +52,6 @@
                 &::placeholder{
                     color: #fff;
                     transition: 1s;
-                }
-                &:focus{
-                    box-shadow:#939393 0px 0px 30px;
                 }
                 &:focus::placeholder{
                     color:transparent;
@@ -87,9 +78,5 @@
                 letter-spacing: 1em;
             }
         }
-    }
-    .texto{
-        width: 60%;
-        padding: 4em;   
     }
 }

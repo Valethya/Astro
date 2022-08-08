@@ -34,7 +34,6 @@
                 color:$bread-hover;
             }
             &:hover{
-            border-radius: 50%;
             border: 1px solid white;
             animation: orbita 5s linear infinite;
         
@@ -69,24 +68,13 @@
     #ul_social_medias{
         li{
             &:hover .fa-brands{
-                color:$fa-index;
-                
+                color:$fa-index;  
             }
             &:hover{
-                border-radius: 50%;
-                border: 1px solid white;
-                animation: orbita 5s linear infinite;
-            
-                    &::before{
-                        content: "";
-                        width: 5px;
-                        height: 5px;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: -4px;
-                        background-color: white;  
-                    }
+                &::before{
+                    background-color: white;  
                 }
+            }
         }
     }
 }  

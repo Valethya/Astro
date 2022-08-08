@@ -8,12 +8,12 @@
 }
 @media  screen and (max-width:  1199.98px) {
     html{
-        font-size: 40%;
+        font-size: 80%;
     }
     p, a{
       font-size: 16px;
     }
-    nav .logo {
+    .logo {
         font-size: 2rem;
     }
     #main-articulos{
@@ -59,20 +59,20 @@
     }
     
 }
-
-@media screen and (max-width:575px) {
+@media screen and (max-width:767.98px){
     .nav{
         ul{
             align-items: flex-end;
-        }
-        .logo{
-            // height: 7em;
-            font-size: 2rem;
-        }
-        .navbar-toggler{
-            font-size: 3rem;
+            padding: 2em;
         }
     }
+}
+
+@media screen and (max-width:575px) {
+    html{
+        font-size: 50%;
+    }
+   
     .back{
        left: 3em;
        top: 10vh;

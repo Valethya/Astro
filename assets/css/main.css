@@ -37,7 +37,6 @@
       .footer #ul_social_medias li:hover .fa-brands {
         color: #82d0ec; }
       .footer #ul_social_medias li:hover {
-        border-radius: 50%;
         border: 1px solid white;
         animation: orbita 5s linear infinite; }
         .footer #ul_social_medias li:hover::before {
@@ -62,18 +61,8 @@
   background-color: rgba(64, 43, 100, 0.413); }
   .index-footer #ul_social_medias li:hover .fa-brands {
     color: rgba(181, 130, 236, 0.991); }
-  .index-footer #ul_social_medias li:hover {
-    border-radius: 50%;
-    border: 1px solid white;
-    animation: orbita 5s linear infinite; }
-    .index-footer #ul_social_medias li:hover::before {
-      content: "";
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      position: absolute;
-      top: -4px;
-      background-color: white; }
+  .index-footer #ul_social_medias li:hover::before {
+    background-color: white; }
 
 @keyframes orbita {
   to {
@@ -89,20 +78,19 @@
 
 .nav {
   position: absolute;
-  float: right;
   top: 0;
   width: 100%;
   min-height: 8vh;
-  max-height: 12vh;
-  background-color: #0a0a0a33;
-  animation: opaco 1s forwards; }
-  .nav .logo {
-    margin-left: 1rem;
-    margin-top: -1rem;
-    height: 5em;
-    width: auto; }
+  max-height: 10vh;
+  background-color: #0a0a0a33; }
   .nav #navbarColor01 {
     background-color: #0a0a0a49; }
+
+.logo {
+  margin-left: 1rem;
+  margin-top: -1rem;
+  height: 5em;
+  width: auto; }
 
 .nav .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -628,28 +616,28 @@ figcaption::first-letter {
         transform: scale(1.01);
         box-shadow: 1px 1px 15px #6a6d7014; }
 
-#contacto-main {
+.contacto-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start; }
-  #contacto-main .img_contacto {
+  .contacto-main .img_contacto {
     object-position: center; }
-  #contacto-main form {
+  .contacto-main form {
     width: 40%;
     padding: 4em;
     font-size: 16px; }
-    #contacto-main form label {
+    .contacto-main form label {
       display: inline;
       margin-left: 0.5em;
       transition: 1s;
       color: transparent;
       font-weight: bold; }
-      #contacto-main form label:focus-within {
+      .contacto-main form label:focus-within {
         color: rgba(130, 208, 236, 0.991); }
-      #contacto-main form label:hover {
+      .contacto-main form label:hover {
         color: rgba(130, 208, 236, 0.991); }
-      #contacto-main form label input {
+      .contacto-main form label input {
         width: 100%;
         margin: 0.5em;
         padding: 0.5em;
@@ -659,12 +647,12 @@ figcaption::first-letter {
         border-bottom: 2px solid #fff;
         outline: none;
         color: #fff; }
-      #contacto-main form label input::placeholder {
+      .contacto-main form label input::placeholder {
         color: #fff;
         transition: 1s; }
-      #contacto-main form label input:hover::placeholder {
+      .contacto-main form label input:hover::placeholder {
         color: transparent; }
-      #contacto-main form label textarea {
+      .contacto-main form label textarea {
         width: 100%;
         margin: 0.5em;
         padding: 0.5em;
@@ -673,14 +661,14 @@ figcaption::first-letter {
         border: 0;
         border-bottom: 2px solid #fff;
         outline: none; }
-        #contacto-main form label textarea::placeholder {
+        .contacto-main form label textarea::placeholder {
           color: #fff;
           transition: 1s; }
-        #contacto-main form label textarea:focus::placeholder {
+        .contacto-main form label textarea:focus::placeholder {
           color: transparent; }
-      #contacto-main form label textarea:hover::placeholder {
+      .contacto-main form label textarea:hover::placeholder {
         color: transparent; }
-    #contacto-main form #submite {
+    .contacto-main form button {
       margin: 0.5em;
       padding: 0.5em;
       width: 100%;
@@ -689,36 +677,25 @@ figcaption::first-letter {
       color: #FF8300;
       font-weight: bold;
       transition: 2s; }
-      #contacto-main form #submite:hover {
+      .contacto-main form button:hover {
         background-color: #82d0ec;
         color: #e6eaef;
         transition: 2s;
         letter-spacing: 1em; }
-  #contacto-main .anuncio {
+  .contacto-main .anuncio {
     width: 40%;
     padding: 2em;
     margin: 4em;
     border: 3px solid #e6eaef1a; }
-    #contacto-main .anuncio h2 {
+    .contacto-main .anuncio h2 {
       background: #82d0ec;
       padding: 1em; }
 
 .gracias {
   position: relative;
-  z-index: 100;
-  height: auto;
-  width: auto; }
-  .gracias .logo {
-    position: absolute;
-    height: 6em;
-    width: 8em;
-    top: 2vh;
-    left: 2vh; }
-    .gracias .logo img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center; }
+  z-index: 100; }
+  .gracias .absolute {
+    position: absolute; }
 
 #gracias {
   position: relative;
@@ -786,10 +763,10 @@ figcaption::first-letter {
 
 @media screen and (max-width: 1199.98px) {
   html {
-    font-size: 40%; }
+    font-size: 80%; }
   p, a {
     font-size: 16px; }
-  nav .logo {
+  .logo {
     font-size: 2rem; }
   #main-articulos .section_article {
     width: 70%;
@@ -818,13 +795,14 @@ figcaption::first-letter {
   #contacto-main .contacto {
     display: flex; } }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767.98px) {
   .nav ul {
-    align-items: flex-end; }
-  .nav .logo {
-    font-size: 2rem; }
-  .nav .navbar-toggler {
-    font-size: 3rem; }
+    align-items: flex-end;
+    padding: 2em; } }
+
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 50%; }
   .back {
     left: 3em;
     top: 10vh; }

@@ -1,5 +1,5 @@
 
-#contacto-main{
+.contacto-main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,7 +62,7 @@
                 color:transparent;
             }
         }
-        #submite{
+        button{
             margin: 0.5em;
             padding: 0.5em;
             width: 100%;

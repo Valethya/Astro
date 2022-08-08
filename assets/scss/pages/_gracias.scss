@@ -1,22 +1,11 @@
 .gracias{
     position: relative;
     z-index: 100;
-    height: auto;
-    width: auto;
-    .logo{
+    .absolute{
         position: absolute;
-        height: 6em;
-        width: 8em;
-        top:2vh;
-        left:2vh;
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position:center;
-        }
-    }  
+    }
 }
+
 #gracias{
     position: relative;
     width: 100%;

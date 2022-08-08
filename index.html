@@ -23,9 +23,9 @@
         new WOW().init();
     </script>
 </head>
-<body id="index">  
+<body>  
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+            <nav class="nav nav-index navbar navbar-expand-md navbar-dark fixed-top wow animate__fadeIn" data-wow-duration="10s">
                 <a class="navbar-brand float-right" href="#first_section"><img class="logo" src="assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
                 <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,19 +33,19 @@
                 <div class="navbar-collapse collapse" id="navbarColor01">
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link"  href="#second_section">Mas que Estrellas</a>
+                        <a class="nav-link"  href="pages/masqueestrellas.html">Mas que Estrellas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#third_section">Observacion</a>
+                        <a class="nav-link" href="pages/comoobservarelcielo.html">Observacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#fourth_section">Historias del universo</a>
+                        <a class="nav-link" href="pages/historiasdeluniverso.html">Historias del universo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#fifth_section">Galeria</a>
+                        <a class="nav-link" href="pages/galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="pages/contacto.html">Contactemonos</a>
                         </li>
                     </ul>
                 </div>
@@ -53,132 +53,28 @@
         </header>
         <main id="index">
      <!-- aqui tenemos la seccion que recibe al usuario con un video de fondo -->
-            <section id="first_section">
-               
+            <section class="index wow animate__fadeIn" data-wow-duration="2s">
                 <video id="video_first_section" muted autoplay loop preload="auto">
-                    <source src="assets/videos/nebula.mp4" type="video/mp4">
+                    <source src="assets/videos/nebulae.mp4" type="video/mp4">
                 </video>
-                <div class="box_p_first_section">
-                    <h1 class="wow animate__fadeInRight" data-wow-duration="1s" >Astro</h1>
-                    <span class="wow animate__fadeInRight astro" data-wow-duration="1.5s">
-                        Por que el universo es extenso y lleno de misterios, nosotros te ayudamos a empezar este viaje a las estrellas
-                    </span>
-                </div>
+                <div>
+                    <h1 ><span>a</span><span>s</span><span>t</span><span>r</span><span>o</span></h1>
+                    <p>un lugar para descubrir</p>
+                </div>  
             </section>
+         </main>   
      <!-- pequeña explicacion de que puede encontrar en cada pagina del sitio -->
-            <section id="second_section">
-                <div class="title_p_second_section box_title_p">
-                    <h2 class="wow animate__fadeInDown" data-wow-duration="1s">Mas que estrellas</h2>
-                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
-                        Por que no todo lo que brilla es oro, no todo lo que brilla en el cielo son estrellas., conoce más a fondo el cielo nocturno.
-                    </h3>
-                    <a class="empecemos"  href="pages/masqueestrellas.html" target="_blank">
-                     <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
-                    </a>
-                </div>
-                <img class="img_second_section" src="assets/imagenes/nebulosa_orion.jpg" alt="nebulosa de orion">               
-            </section>
-
-            <section id="third_section">
-                <img class="img_third_section" src="assets/imagenes/milkyway.jpg" alt="hombre con la via lactea de fondo">
-                <img class="img_third_section_2" src="assets/imagenes/brujula_blanca.png" alt="una brujula">
-                <div class=" box_title_p">
-                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">Observacion</h2>
-                    <h3 class="wow animate__fadeInRight" data-wow-duration="1s">
-                        Ahora sabes que hay más que estrellas en el cielo, estas listo para observarlas y reconocerlas.
-                    </h3>
-                    <a class="empecemos" href="pages/comoobservarelcielo.html" target="_blank">
-                        <div class="wow animate__fadeInRight" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
-                    </a>
-                </div>
-            </section>
-
-            <section id="fourth_section">
-                <div class="title_p_fourth_section box_title_p">
-                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">historias del universo</h2>
-                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
-                        te contaremos los mitos y leyendas que rodean a las constelaciones. 
-                    </h3>
-                    <a class="empecemos"  href="pages/historiasdeluniverso.html" target="blank">
-                        <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
-                    </a>    
-                </div>
-                <img class="img_fourth_section" src="assets/imagenes/constelaciones cielo.jpg" alt="cielo estrellado">
-                <img class="img_fourth_section_2" src="assets/imagenes/andromeda_blanca.png" alt="dibujo de andromeda">                 
-            </section>    
-
-            <section  id="fifth_section">
-                <div class="title_fifth_section box_title_p">
-                    <h2  class="wow animate__fadeInDown" data-wow-duration="1s">Galeria</h2>
-                    <h3 class="wow animate__fadeInLeft" data-wow-duration="1s">
-                        Sigue sorprendiendote con el universo, en una exquisita seleccion de imagenes y fotografias.
-                    </h3>
-                    <a class="empecemos" 
-                     href="pages/galeria.html" target="_blank">
-                        <div class="wow animate__fadeInLeft" data-wow-duration="1.5s">Empecemos<i class="wow fa-solid fa-rocket"></i></div>
-                    </a>
-                </div>
-                <!-- <div class="box_gallery"> -->
-                    <div class="box_img_fifth_section">
-                        <p class="p_img_fifth_section wow animate__fadeInDown" data-wow-duration="1s">
-                            En este viaje, te esperan Galaxias que quizas ya no existen  
-                        </p>
-                        <img class="img_fifth_section wow animate__fadeInUp" data-wow-duration="1s" src="assets/imagenes/spiral_galaxy.jpg" alt="galaxia en espiral">                       
-                    </div>
-                    <div class="box_img_fifth_section">    
-                        <img class="img_fifth_section wow animate__fadeInDown" data-wow-duration="1.5s" src="assets/imagenes/head_horse.jpg" alt="nebulosa de orion, cabeza de caballo">
-                        <p class="p_img_fifth_section wow animate__fadeInUp" data-wow-duration="1.5s">
-                            Lugares donde nacen las estrellas para poder seguir llenando nuestro cielo
-                        </p>
-                    </div>
-                    <div class="box_img_fifth_section">   
-                        <p class="p_img_fifth_section wow animate__fadeInDown" data-wow-duration="2s">
-                            Mostrandote sus formas hechas de solo ciencia
-                        </p> 
-                        <img class="img_fifth_section wow animate__fadeInUp" data-wow-duration="2s" src="assets/imagenes/nebulosa.jpg" alt="nebulosa">                        
-                    </div>    
-                    <div class="box_img_fifth_section">    
-                        <img class="img_fifth_section wow animate__fadeInDown" data-wow-duration="2.5s" src="assets/imagenes/eclipse.jpg" alt="eclipse de luna">
-                        <p class="p_img_fifth_section wow animate__fadeInUp" data-wow-duration="2.5s">
-                            Y de sus eventos siempre tan esperados por todos los terrestres.
-                        </p>
-                    </div>
-                <!-- </div>         -->
-            </section> 
-        </main>
-
-        <footer id="contacto">  
-            <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
-           
-            <!-- formulario para hacer participe al usuario -->
-            <form action="" method="post">
-                <label for="name">Nombre
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
-                </label>                
-                    <label for="email">E-mail
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
-                </label>               
-                    <label for="asunto">Asunto
-                    <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-                </label>                
-                    <label for="cuentanos">Cuentanos
-                    <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
-                </label>                
-                <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
-            </form>
-            <div class="title_p_contact">       
-                <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                    Te invitamos a que nos cuentes tu experiencia con las estrellas y de como podemos nosotros mejorarla.
-                </h3>
-                <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
-                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-2x fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></a></li>   
-                </ul>
-            </div>
-        
+        <footer class="index-footer footer">  
+            <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
+                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands  fa-twitter"></i></a></li>   
+            </ul>
+            <p>© 2022 Copyright: Astro</p>
         </footer>
 </body>
 
+
 </html>
+
 

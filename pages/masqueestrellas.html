@@ -23,10 +23,10 @@
         new WOW().init();
     </script>
 </head>
-<body>
+<body id="inicio" class="main">
 
     <header >
-        <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+        <nav class="nav navbar navbar-expand-md navbar-dark nav-black fixed-top">
             <a class="navbar-brand float-right" href="../index.html"><img class="logo" src="../assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,21 +46,21 @@
                     <a class="nav-link" href="./galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contactemonos</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main id="mas_que_estrellas">
+    <main id="main-articulos">
         <div class="back">
             <a href="../index.html" class="btn-back">
                 <div>
-                <svg width="16px" height="14px" viewBox="0 0 16 14">
-                    <path d="M1,7 L15,7"></path>
-                    <polyline points="7 1 1 7 7 13"></polyline>
-                </svg>
+                    <svg width="16px" height="14px" viewBox="0 0 16 14">
+                        <path d="M1,7 L15,7"></path>
+                        <polyline points="7 1 1 7 7 13"></polyline>
+                    </svg>
                 </div>
                 <span>Back</span>
             </a>
@@ -76,147 +76,144 @@
             <h1>Más que estrellas</h1>
 
             <p>
-                Nuestro ierlo
+                Cuando vemos por primera vez el cielo nocturno plagado de punto brillantes, como si alguien hubiera tirado brillantina a manos llenas, nos maravillamos con su belleza para luego escuchar que esos pequeños puntos brillantes, se llaman estrellas,pero somos tan pequeños que es difícil entender que hay más que estrellas en el cielo, que hay planetas y otros objetos, cuál sería la diferencia para nosotros entre un planeta y una estrella, sin embargo  a medida que vamos creciendo entendemos que ya no solo hay estrellas en el cielo, hay planetas, estrellas, satélites y muchos otros cuerpos celestes, sin embargo, aun cuando sabemos sus nombres, no sabemos lo que son.
+
             </p>
         </div>  
 <!-- tarjeta con los diferentes articulos -->
-    <section class="section_article">
-            <div class="box_article">  
-                <img src="" alt="" class="img-estrellas">
+        <section class="section_article">
+                <div class="box_article">  
+                        <img src="../assets/imagenes/cielo-estrellado.jpg" alt="" class="img-article">
+                    
+                    <article>
+                        <h2>Estrellas</h2>
+                        <p>
+                            Siempre que vemos hacia arriba al firmamento podemos ver las estrellas, aquellas nos han guiado durante miles de años, atravesando mares y desiertos, nos ha fascinado su brillo en las noches oscuras, sin embargo, ¿Sabes que son las estrellas?
+                        </p>
+                        <a href="#">leer mas...</a>
+                    </article>   
+                    <ul>
+                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
+                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i> 03 jun 2017</li>
+                    </ul>
+                </div>
+            <div class="box_article">   
+
+                    <img src="../assets/imagenes/neptuno.jpg" alt="" class="img-article">  
+                
                 <article>
-                    <h2>Estrellas</h2>
+                    <h2>planetas</h2> 
                     <p>
-                        Siempre que vemos hacia arriba al firmamento podemos ver las estrellas, aquellas nos han guiado durante miles de años, atravesando mares y desiertos, nos ha fascinado su brillo en las noches oscuras, sin embargo, ¿Sabes que son las estrellas?
+                        hace siglos se creia los planetas solo eran estrellas errantes...
                     </p>
+                    <a href="#">leer mas...</a>
+                </article>       
+                <ul>
+                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>15</li>
+                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
+                </ul>
+                
+            </div>
+
+            <div class="box_article">    
+                <img src="../assets/imagenes/satelite-jupiter.jpg" alt="" class="img-article">    
+                <article>
+                    <h2>satelites</h2>
+                    <p>
+                        Todas las noches sale a relucir nuestro hermoso satelite natural, la Luna.
+                    </p>
+                    <a href="#">leer mas...</a>
                 </article>   
                 <ul>
-                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
-                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i> 03 jun 2017</li>
+                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>4</li>
+                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
                 </ul>
             </div>
-        <div class="box_article">    
-            <img src="../assets/imagenes/neptuno.jpg" alt="" class="img-planetas">    
-            <article>
-                <h2>planetas</h2> 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo. 
-                </p>
-            </article>       
-            <ul>
-                <li class="li_date_like"><i class="fa-solid fa-heart"></i>15</li>
-                <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
-            </ul>
-        </div>
 
-        <div class="box_article">    
-            <img src="" alt="" class="img-satelites">    
-            <article>
-                <h2>satelites</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            </article>   
-            <ul>
-                <li class="li_date_like"><i class="fa-solid fa-heart"></i>4</li>
-                <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
-            </ul>
-        </div>
+            <div class="box_article">
+                <img src="../assets/imagenes/galaxy.jpg" alt="" class="img-article">
+                <article>
+                    <h2>galaxia</h2>
+                    <p>
+                    Las galaxias es el hogar que alberga muchos sistemas como el nuestro.
+                    </p>
+                    <a href="#">leer mas...</a>
+                    <ul>
+                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>8</li>
+                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
+                    </ul>
+                </article>
+            </div>
 
-        <div class="box_article">
-            <img src="../assets/imagenes/galaxy.jpg" alt="" class="img-galaxias">
-            <article>
-                <h2>galaxia</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            
+            <div class="box_article">
+                <img src="../assets/imagenes/cumulo.jpeg" alt="" class="img-article">
+                <article>
+                    <h2>cumulos</h2>
+                    <p>
+                        Un conjunto de estrellas atraidas entre si, mientras mas fuerte es su atraccion su forma globular es mas acentuada, no asi con las que se atraen menos que consiguen formas mas irregulares.
+                    </p>
+                    <a href="#">leer mas...</a>
+                </article>
                 <ul>
                     <li class="li_date_like"><i class="fa-solid fa-heart"></i>8</li>
                     <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
                 </ul>
-            </article>
-        </div>
+            </div>
 
-        <div class="box_article">
-            <img src="" alt="" class="img-cumulos">
-            <article>
-                <h2>cumulos</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            </article>
-            <ul>
-                <li class="li_date_like"><i class="fa-solid fa-heart"></i>8</li>
-                <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
-            </ul>
-        </div>
+            <div class="box_article">
+                <img src="../assets/imagenes/meteorito.jpg" alt="" class="img-article">
+                <article>
+                    <h2>asteroides, meteroides, meteoros, cometas y meteoritos</h2>
+                    <p>
+                        Sabes tu que es una estrella fugaz? te podemos decir con seguridad que es un estrella, entonces que es?
+                    </p>
+                    <a href="#">leer mas...</a>
+                </article>
+                <ul>
+                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
+                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
+                </ul>
+            </div>
 
-        <div class="box_article">
-            <img src="../assets/imagenes/meteorito.jpg" alt="" class="img-meteoritos">
-            <article>
-                <h2>asteroides, meteroides, meteoros, cometas y meteoritos</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            </article>
-            <ul>
-                <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
-                <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2022</li>
-            </ul>
+            <div class="box_article">
+                <img src="../assets/imagenes/helix-nebula.jpg" alt="" class="img-article">
+                <article>
+                    <h2>nebulosas</h2>
+                    <p>
+                        una nebulosa es muchas cosas, pero de todas lo mas impresionante es saber que es donde nacen las estrellas o por el contrario... es la estela que deja una estrella al morir.
+                    </p>
+                    <a href="#">leer mas...</a>
+                </article>
+                <ul>
+                    <li class="li_date_like"><i class="fa-solid fa-heart"></i>10</li>
+                    <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                </ul>
+            </div>
+        </section>
+        <div class="citas">
+            <cite>"No se puede escuchar música sin silencio, no se pueden ver las estrellas sin oscuridad. Silenciemos las luces para escuchar la música de las estrellas"</cite>
+            <p>-Iratxe Etxebarria-</p>
         </div>
-
-        <div class="box_article">
-            <img src="" alt="" class="img-nebulosas">
-            <article>
-                <h2>nebulosas</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                </p>
-            </article>
-            <ul>
-                <li class="li_date_like"><i class="fa-solid fa-heart"></i>10</li>
-                <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-            </ul>
+        <div class="inicio">
+            <a href="#inicio" class="btn-inicio">
+                <div>
+                    <svg width="16px" height="14px" viewBox="0 0 16 14" transform="rotate(90)">
+                        <path d="M1,7 L15,7"></path>
+                        <polyline points="7 1 1 7 7 13"></polyline>
+                    </svg>
+                </div>
+                <span>Subir</span>
+            </a>
         </div>
-    </section>
     </main>
 
-    <footer id="contacto">  
-        <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
-       
-        <!-- formulario para hacer participe al usuario -->
-        <form action="" method="post">
-            <label for="name">Nombre
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
-            </label>                
-                <label for="email">E-mail
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
-            </label>               
-                <label for="asunto">Asunto
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">Cuentanos
-                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
-            </label>                
-            <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
-        </form>
-        <div class="title_p_contact">       
-            <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                Te invitamos a que nos cuentes tu experiencia con las estrellas y de como podemos nosotros mejorarla.
-            </h3>
-            <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
-                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-2x fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></a></li>   
-            </ul>
-        </div>
-    
+    <footer class="footer"> 
+        <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>   
+        </ul>
+        <p>© 2022 Copyright: Astro</p>
     </footer>
 </body>
 

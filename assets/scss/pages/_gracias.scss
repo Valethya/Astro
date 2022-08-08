@@ -1,0 +1,82 @@
+.gracias{
+    position: relative;
+    z-index: 100;
+    .absolute{
+        position: absolute;
+    }
+}
+
+#gracias{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position:51%;
+        animation: fondo 100s linear;
+    }
+    .mensaje-gracias{
+        width: fit-content;
+        height: fit-content;
+        padding: 2em;
+        margin: 4em;
+        position: absolute;
+        backdrop-filter: blur(2px);
+        // background-color: $delay-astro;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            color:$bread-hover;
+        }
+        p{
+            font-weight: bold;
+            &::first-letter{
+            text-transform: capitalize;
+            }
+        }
+        a{
+            font-weight: bold;
+            letter-spacing: 0.3em;
+            transition: 3s;
+            text-transform: uppercase;
+            &:hover{
+                 color:$bread-hover;
+                 letter-spacing: 1em;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 1em;
+            li{
+                .fa-brands{
+                    font-size: 2em;
+                }
+                &:hover .fa-brands{
+                    color:$bread-hover;
+                }
+            }
+        }
+        
+        
+    }
+    @keyframes fondo {
+        from{
+            @include transform(scale(1))
+        }
+        to{
+            @include transform(scale(3))
+        }
+        
+    }
+}

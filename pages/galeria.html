@@ -23,10 +23,10 @@
         new WOW().init();
     </script>
 </head>
-<body>
+<body id="inicio">
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark nav-black fixed-top">
+        <nav class="nav navbar navbar-expand-md navbar-dark nav-black fixed-top">
             <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/imagenes/astronegro.png" alt="logo"> <span class="sr-only">(current)</span></a>
             <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,14 +46,14 @@
                     <a class="nav-link" href="./galeria.html">Galeria<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link"  href="./contacto.html">Contactemonos</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     
-    <main id="galeria">
+    <main id="galeria" class="main">
         <div class="back">
             <a href="../index.html" class="btn-back">
                 <div>
@@ -77,27 +77,20 @@
         
         <div class="box_gallery"> 
             <div class="box_img_p_gallery">
-                    <div class="wrapper-orbita">
-                        <ul>
-                            <li class="centro"></li>
-                            <li class="orbita uno"></li>
-                            <li class="orbita dos"></li>
-                        </ul>  
-                    </div>
+                
                 <div class="img-svg ">
+                    <img src="../assets/imagenes/spiral_galaxy.jpg" alt="galaxia de andromeda">
                     <svg class="der-sup" viewBox="0 0 40 50">
                         <path d="M1,1  L40,1 L40,40"/>
                     </svg>
                     <svg class="izq-inf"viewBox="0 0 40 50">
                         <path d="M1,1  L1,40 L40,40"/>
                     </svg>
-                    <img src="../assets/imagenes/spiral_galaxy.jpg" alt="galaxia en espiral">
                 </div>
                 <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">Galaxia en espiral</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
+                    <h2>Galaxia de andromeda</h2>
+                    <p >
+                        esta hermosa galaxia es el objeto observable a simple vista más lejano de la tierra, está a 2,5 millones de años luz y es junto a nuestra galaxia, la<b><i>Vía Láctea </i></b>, la más grande y brillante del <b><i>Grupo Local</i></b>.
                     </p>
                     <ul>
                         <li class="li_date_like"><i class="fa-solid fa-heart"></i>4</li>
@@ -106,77 +99,8 @@
                 </div>  
                 
             </div>
-
-            <div class="box_img_p_gallery">
-                <div class="wrapper-orbita">
-                    <ul>
-                        <li class="centro"></li>
-                        <li class="orbita uno"></li>
-                        <li class="orbita dos"></li>
-                    </ul>  
-                </div>
-                <div class="img-svg">
-                    <svg class="der-sup" viewBox="0 0 40 50">
-                        <path d="M1,1  L40,1 L40,40"/>
-                    </svg>
-                    <svg class="izq-inf"viewBox="0 0 40 50">
-                        <path d="M1,1  L1,40 L40,40"/>
-                    </svg>
-                    <img src="../assets/imagenes/head_horse.jpg" alt="Orion, nebulosa cabeza de caballo">
-                </div>
-             
-                <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">Nebulosa de Orion</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
-                    </p>
-                    <ul>
-                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>3</li>
-                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="box_img_p_gallery">  
-                <div class="wrapper-orbita">
-                    <ul>
-                        <li class="centro"></li>
-                        <li class="orbita uno"></li>
-                        <li class="orbita dos"></li>
-                    </ul>  
-                </div>
-                <div class="img-svg">
-                    <svg class="der-sup" viewBox="0 0 40 50">
-                        <path d="M1,1  L40,1 L40,40"/>
-                    </svg>
-                    <svg class="izq-inf"viewBox="0 0 40 50">
-                        <path d="M1,1  L1,40 L40,40"/>
-                    </svg>
-                    <img src="../assets/imagenes/nebulosa.jpg" alt="nebulosa">
-                </div>    
-                
-                <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">Nebulosa</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
-                    </p>
-                    <ul>
-                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
-                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="box_img_p_gallery">   
-                <div class="wrapper-orbita">
-                    <ul>
-                        <li class="centro"></li>
-                        <li class="orbita uno"></li>
-                        <li class="orbita dos"></li>
-                    </ul>  
-                </div>
+    
                 <div class="img-svg">
                     <svg class="der-sup" viewBox="0 0 40 50">
                         <path d="M1,1  L40,1 L40,40"/>
@@ -184,14 +108,12 @@
                     <svg class="izq-inf"viewBox="0 0 40 50">
                         <path d="M1,1  L1,40 L40,40"/>
                     </svg>
-                    <img src="../assets/imagenes/eclipse.jpg" alt="ecplise lunar">
+                    <img src="../assets/imagenes/tierra-estrellas.jpg" alt="la tierra y las estrellas">
                 </div>
-          
                 <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">Eclipse lunar</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
+                    <h2>la tierra y las estrellas</h2>
+                    <p>
+                        fotografía desde un avión, donde es posible ver una porción de estrellas en el cielo.
                     </p>
                     <ul>
                         <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
@@ -200,14 +122,58 @@
                 </div>      
             </div>
 
-            <div class="box_img_p_gallery">   
-                <div class="wrapper-orbita">
+
+            <div class="box_img_p_gallery">  
+                
+                <div class="img-svg">
+                    <svg class="der-sup" viewBox="0 0 40 50">
+                        <path d="M1,1  L40,1 L40,40"/>
+                    </svg>
+                    <svg class="izq-inf"viewBox="0 0 40 50">
+                        <path d="M1,1  L1,40 L40,40"/>
+                    </svg>
+                    <img src="../assets/imagenes/bubble-nebula.jpg" alt="nebulosa de la burbuja">
+                </div>   
+                <div class="p_li_gallery">
+                    <h2>Nebulosa de la burbuja</h2>
+                    <p>
+                        esta <b><i>nebuolsa de emision</i></b> se encuentra en la constelacón de casiopea. Es una <b><i>región H2</i></b>, el lugar de nacimiento de estrellas masivas, conocidas como <b><i>guarderias estelares</i></b>.
+
+                    </p>
                     <ul>
-                        <li class="centro"></li>
-                        <li class="orbita uno"></li>
-                        <li class="orbita dos"></li>
-                    </ul>  
+                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
+                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                    </ul>
                 </div>
+            </div>
+            <div class="box_img_p_gallery">
+               
+                <div class="img-svg">
+                    <svg class="der-sup" viewBox="0 0 40 50">
+                        <path d="M1,1  L40,1 L40,40"/>
+                    </svg>
+                    <svg class="izq-inf"viewBox="0 0 40 50">
+                        <path d="M1,1  L1,40 L40,40"/>
+                    </svg>
+
+                    <img src="../assets/imagenes/nebulosa_orion.jpg" alt="nebulosa de orion">
+                </div>
+             
+                <div class="p_li_gallery">
+                    <h2>Nebulosa de Orion</h2>
+                    <p>
+                        La nebulosa de Orión es de tipo <b><i>difusa</i></b> y también es una región H2. Al ser una de las más brillantes, es observable a simple vista al sur del <b><i>Cinturón de Orión</i></b>.
+                    </p>
+                    <ul>
+                        <li class="li_date_like"><i class="fa-solid fa-heart"></i>3</li>
+                        <li class="li_date_like"><i class="fa-solid fa-calendar-days"></i>03 jun 2017</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="box_img_p_gallery">   
+   
                 <div class="img-svg">
                     <svg class="der-sup" viewBox="0 0 40 50">
                         <path d="M1,1  L40,1 L40,40"/>
@@ -217,12 +183,10 @@
                     </svg>
                     <img src="../assets/imagenes/earth.jpg" alt="la tierra de noche vista desde el espacio">
                 </div>
-               
                 <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">Vista nocturna de la tierra</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
+                    <h2>Vista nocturna de la tierra</h2>
+                    <p>
+                        vista de la tierra desde la <b><i>estación espacial internacional</i></b>, donde se puede apreciar las luces de las grandes urbes.
                     </p>
                     <ul>
                         <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
@@ -232,13 +196,7 @@
             </div>
 
             <div class="box_img_p_gallery"> 
-                <div class="wrapper-orbita">
-                    <ul>
-                        <li class="centro"></li>
-                        <li class="orbita uno"></li>
-                        <li class="orbita dos"></li>
-                    </ul>  
-                </div>
+       
                 <div class="img-svg">
                     <svg class="der-sup" viewBox="0 0 40 50">
                         <path d="M1,1  L40,1 L40,40"/>
@@ -248,12 +206,10 @@
                     </svg>
                     <img src="../assets/imagenes/moon.jpg" alt="la luna llena">
                 </div>
-              
                 <div class="p_li_gallery">
-                    <h2 class="title_img_gallery">La luna llena</h2>
-                    <p class="p_gallery">Lorem ipsum dolor sit amet, 
-                        consectetuer adipiscing elit. 
-                        Aenean commodo
+                    <h2>La luna llena</h2>
+                    <p>
+                        En este punto, el satélite natural de la tierra, ha alcanzado su mayor luminosidad.
                     </p>
                     <ul>
                         <li class="li_date_like"><i class="fa-solid fa-heart"></i>5</li>
@@ -262,37 +218,25 @@
                 </div>
             </div>
         </div>
+        <div class="inicio">
+            <a href="#inicio" class="btn-inicio">
+                <div>
+                    <svg width="16px" height="14px" viewBox="0 0 16 14" transform="rotate(90)">
+                        <path d="M1,7 L15,7"></path>
+                        <polyline points="7 1 1 7 7 13"></polyline>
+                    </svg>
+                </div>
+                <span>Subir</span>
+            </a>
+        </div>
     </main>
 
-    <footer id="contacto">  
-        <h2 class="wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0s" id="title_contact">contacto </h2>
-       
-        <!-- formulario para hacer participe al usuario -->
-        <form action="" method="post">
-            <label for="name">Nombre
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1s" type="text" id="name" placeholder="Nombre" required>
-            </label>                
-                <label for="email">E-mail
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="1.5s" type="email" id="email" placeholder="Email" required>
-            </label>               
-                <label for="asunto">Asunto
-                <input  autocomplete="off" class="wow animate__fadeInRight" data-wow-duration="2s" type="text" id="asunto" placeholder="Asunto" required>
-            </label>                
-                <label for="cuentanos">Cuentanos
-                <textarea class="wow animate__fadeInRight" data-wow-duration="2.5s" id="cuentanos" placeholder="Cuentanos..." rows="5" required></textarea>
-            </label>                
-            <button class="wow animate__fadeInRight" data-wow-duration="3s" id="submite" type="submit" name="enviar" >Enviar</button>   
-        </form>
-        <div class="title_p_contact">       
-            <h3 class="h3_contact wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                Te invitamos a que nos cuentes tu experiencia con las estrellas y de como podemos nosotros mejorarla.
-            </h3>
-            <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
-                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-2x fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></a></li>   
-            </ul>
-        </div>
-    
+    <footer class="footer"> 
+        <ul class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s" id="ul_social_medias">   
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>   
+        </ul>
+        <p>© 2022 Copyright: Astro</p>
     </footer>
 </body>

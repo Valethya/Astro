@@ -1,8 +1,64 @@
-#obserbar{
-    padding: 2em 4em 4em 4em;
+.observar{
+    display: flex;
+    flex-wrap: wrap;
+    #observar{
+        padding: 2em 4em 4em 4em;
+        width: 70%;
+        figure{
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            padding: 1em;
+            margin: 1em;
+            border: 3px solid $border;
+            stroke-width: 0.5px;
+            clear: right;
+            float: right;
+        
+        }
+        ol{
+            li{
+                list-style: upper-roman;
+                color:white;
+            }
+        }
+       
+    }
+    .articulos-sugeridos{
+        height: fit-content;
+        .box_article{
+            width: 25vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1em;
+            margin-top: 2em;
+            border: 3px solid $border;
+            stroke-width: 0.5px;
+            transition: 1s;
+            article{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+                a{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .fa-heart{
+                color:crimson
+            }
+            &:hover{
+                @include transform(scale(1.01));
+                box-shadow: 1px 1px 15px #6a6d7014;
+            }
+        }
+       
+    
+    }
+
    
-}
-.img_brujula{
-    width: 40%;
-    float: right;  
 }

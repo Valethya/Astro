@@ -1,60 +1,97 @@
-.section_article{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-auto-rows:auto;
-    padding:4em;
-    grid-gap:1rem;  
-    height: auto;
+#main-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    .citas{
+        width: 25%;
+        height: fit-content;
+        border-left: 1px solid $border;
+        padding: 2em;
+        font-weight: bold;
+        margin-top: 4em;
+        p{
+            font-weight: normal;
+        }
+    }  
+    .section_article{
+        display:grid;
+        width: 72vw;
+        grid-template-columns:repeat(3, 1fr);
+        grid-auto-rows:auto;
+        padding:4em;
+        padding-right: 4em;
+        grid-gap:1rem;  
+        height: auto;
 
-    .box_article{
-        position: relative;
-        background-color:$delay_black;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        h2{
-            margin: 0.5em;
-            position: absolute;
-            top: 0;
-        }
-        article{
-            padding:1em;
-            // border: 1px solid $delay_black;
-            border-top: none; 
-        }
-        
-        &:nth-child(1){
-            grid-column-start:span 3;
-           }
-        &:nth-child(6){
-            grid-column-end: span 2;
-           }
-        
-        &:hover .fa-heart{
-            animation: fluido 2s ease-in-out infinite;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 300%;
-            @include background-clip(text);
-            -webkit-text-fill-color: transparent;
-        }   
-        &:hover h2{
-           @extend .fa-heart
-        }
-        
-        @keyframes fluido {
-            0% { background-position: 0 50% }
-            50% { background-position: 100% 50% }
-            100% { background-position: 0 50% }
-        }
-        .li_date_like{
-            color: #fff;
-            margin-top: 1em;  
-        }
-        .fa-heart{
-            color: crimson;
-        }
-        
-           
-    }   
+        .box_article{
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1em;
+            border:  solid $border;
+            stroke-width: 0.5px;
+            transition: 1s;
+            .img-article{
+                height: 100%;
+                object-fit: cover;
+            
+            }
+            a{
+                color:$bread-hover;
+                padding: 0;
+                font-size: 16px;
+                &:hover{
+                    color: $bread-active;
+                }
+            }
+
+            h2{
+                margin: 0.5em;
+                position: absolute;
+                top: 0;
+            }
+            article{
+                margin-top: 1em;
+                border-top: none; 
+            }
+            &:nth-child(1){
+                grid-column-start:span 3;
+            }
+            &:nth-child(6){
+                grid-column-end: span 2;
+            }
+            &:hover{
+                @include transform(scale(1.01));
+                box-shadow: 1px 1px 15px $border;
+            }
+            
+            &:hover .fa-heart{
+                animation: fluido 2s ease-in-out infinite;
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 300%;
+                @include background-clip(text);
+                -webkit-text-fill-color: transparent;
+            }   
+            &:hover h2{
+            @extend .fa-heart
+            }
+            
+            @keyframes fluido {
+                0% { background-position: 0 50% }
+                50% { background-position: 100% 50% }
+                100% { background-position: 0 50% }
+            }
+            .li_date_like{
+                color: #fff;
+                margin-top: 1em;  
+            }
+            .fa-heart{
+                color:crimson;
+            }
+            
+            
+        } 
+    }
+
 }

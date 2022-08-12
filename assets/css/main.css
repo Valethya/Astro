@@ -792,7 +792,7 @@ figcaption::first-letter {
     float: right; } }
 
 @media screen and (max-width: 991.98px) {
-  #contacto-main .contacto {
+  .contacto-main {
     display: flex; } }
 
 @media screen and (max-width: 767.98px) {
@@ -864,13 +864,13 @@ figcaption::first-letter {
       .box_gallery .box_img_p_gallery .p_li_gallery {
         width: 100%;
         padding: 4em; }
-  #contacto-main {
+  .contacto-main {
     display: flex;
     flex-direction: column; }
-    #contacto-main form {
+    .contacto-main form {
       width: 90%;
       font-size: 12px; }
-    #contacto-main .texto {
+    .contacto-main .texto {
       width: 90%; }
-    #contacto-main .anuncio {
+    .contacto-main .anuncio {
       width: 75%; } }

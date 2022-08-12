@@ -52,10 +52,8 @@
 }
 @media  screen and (max-width:  991.98px){
 
-    #contacto-main{
-        .contacto{
+    .contacto-main{
             display: flex;
-        }
     }
     
 }
@@ -160,7 +158,7 @@
             }
         }
     }
-    #contacto-main{
+    .contacto-main{
         display: flex;
         flex-direction: column;
         form{
